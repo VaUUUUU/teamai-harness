@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "baseline": "v0.1.0",
+  "teamai": {
+    "version": "0.24.0",
+    "source": "https://github.com/Tencent/teamai-cli",
+    "manualCommit": "656432008468e1783445438cb17af08fedd335cf"
+  },
+  "skills": [
+    {
+      "name": "archify",
+      "version": "2.17.0-dev.1",
+      "source": "https://github.com/tt-a1i/archify",
+      "snapshot": "Installed skill snapshot; upstream commit not recorded. Exact imported files are pinned in inventory.json.",
+      "license": "MIT; see LICENSE and THIRD_PARTY_NOTICES.md",
+      "importedAt": "2026-09-15",
+      "changes": "No skill content changes."
+    },
+    {
+      "name": "sci-ppt",
+      "version": "1.0.0",
+      "source": "Installed sci-ppt skill snapshot; upstream repository URL not recorded in the installed metadata.",
+      "snapshot": "Exact imported files are pinned in inventory.json.",
+      "license": "MIT skill; dependencies have separate licenses, including PyMuPDF AGPL/commercial terms.",
+      "importedAt": "2026-09-15",
+      "changes": "No skill content changes."
+    },
+    {
+      "name": "dashi-ppt",
+      "version": "git-21dc7e5",
+      "source": "https://github.com/chuspeeism/dashi-ppt-skill",
+      "commit": "21dc7e5fc8c3a0d7f6a94948153dd1ee954f4e64",
+      "sourcePath": "skills/dashi-ppt",
+      "license": "AGPL-3.0 core; bundled proprietary export engine retains its own LICENSE.",
+      "importedAt": "2026-09-15",
+      "changes": "Copied upstream root LICENSE into the skill root; no other skill content changes."
+    }
+  ],
+  "excluded": [
+    {
+      "name": "lieflat-charts",
+      "reason": "Approved as a candidate, but noncommercial license is not cleared for this commercial-possible baseline. No skill files are distributed."
+    }
+  ]
+}

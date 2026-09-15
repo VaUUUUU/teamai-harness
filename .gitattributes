@@ -1,0 +1,2 @@
+# Preserve exact upstream bytes so inventory hashes match across operating systems.
+* -text

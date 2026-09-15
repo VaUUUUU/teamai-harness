@@ -1,0 +1,31 @@
+team: VaUUUUU
+description: 跨机器、跨 AI 工具共享的协作规则、技能和 MCP 配置
+repo: https://github.com/VaUUUUU/teamai-harness.git
+provider: github
+reviewers: []
+autoUpdate: false
+usageReport: false
+sharing:
+  recall:
+    enabled: false
+  contributeHint:
+    enabled: false
+  env:
+    injectShellProfile: false
+  mcp:
+    autoApply: true
+    allowedCommands: [graft, fastctx]
+  hooks:
+    autoApply: false
+toolPaths:
+  codex:
+    skills: .codex/skills
+    settings: .codex/hooks.json
+    claudemd: .codex/AGENTS.md
+    mcp: .codex/config.toml
+  claude:
+    skills: .claude/skills
+    settings: .claude/settings.json
+    claudemd: .claude/CLAUDE.md
+    mcp: .claude.json
+    mcpProject: .mcp.json

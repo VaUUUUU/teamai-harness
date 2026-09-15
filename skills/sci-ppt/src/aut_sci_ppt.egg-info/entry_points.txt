@@ -1,0 +1,2 @@
+[console_scripts]
+aut-sci-ppt = aut_sci_ppt.main:main

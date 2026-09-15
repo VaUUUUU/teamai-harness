@@ -1,0 +1,15 @@
+servers:
+  - name: graft
+    description: 代码上下文图、调用链、影响范围与仓库地图
+    transport: stdio
+    command: graft
+    args: [mcp]
+    requires: [graft]
+    tools: [codex, claude]
+  - name: fastctx
+    description: 本地文件读取、搜索、定位与机械替换
+    transport: stdio
+    command: fastctx
+    args: [serve]
+    requires: [fastctx]
+    tools: [codex, claude]
