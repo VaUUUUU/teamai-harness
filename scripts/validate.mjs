@@ -16,6 +16,21 @@ for (const source of sources.skills) {
   const text = fs.readFileSync(path.join(base, 'SKILL.md'), 'utf8');
   assert(/^---\r?\n/.test(text) && /^name:\s*.+$/m.test(text) && /^description:\s*.+$/m.test(text), `Invalid skill metadata: ${source.name}`);
   assert(fs.existsSync(path.join(base, 'LICENSE')), `Missing LICENSE: ${source.name}`);
+  if (source.bundleManifest) {
+    const manifestPath = path.resolve(base, source.bundleManifest);
+    assert(!path.relative(base, manifestPath).startsWith('..') && !path.isAbsolute(path.relative(base, manifestPath)), `Unsafe bundle manifest path: ${source.name}`);
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+    assert(Array.isArray(manifest.files) && manifest.files.length > 0, `Empty bundle manifest: ${source.name}`);
+    const seen = new Set();
+    for (const file of manifest.files) {
+      assert(typeof file.path === 'string' && !file.path.includes('\\') && !file.path.split('/').includes('..') && !path.posix.isAbsolute(file.path), `Unsafe bundle entry: ${source.name}`);
+      assert(!seen.has(file.path), `Duplicate bundle entry: ${file.path}`);
+      seen.add(file.path);
+      assert(Number.isSafeInteger(file.bytes) && file.bytes >= 0 && /^[a-f0-9]{64}$/.test(file.sha256), `Invalid bundle metadata: ${file.path}`);
+      assert.deepEqual(actual.files[`skills/${source.name}/${file.path}`], { bytes: file.bytes, sha256: file.sha256 }, `Upstream bundle mismatch: ${source.name}/${file.path}`);
+    }
+    console.log(`PASS upstream bundle: ${source.name}, ${manifest.files.length} files`);
+  }
 }
 for (const [name, metadata] of Object.entries(actual.files)) {
   assert(metadata.bytes < 95 * 1024 * 1024, `File too large for normal GitHub Git: ${name}`);

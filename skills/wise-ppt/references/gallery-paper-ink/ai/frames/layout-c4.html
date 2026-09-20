@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html data-theme-id="paper-ink" lang="zh-CN" data-runtime="wise-ppt-specimen" data-typography-mode="all-sans" data-render-pending="true" data-page-id="gallery-ai-c4" data-page-role="prove" data-theme="paper-ink" data-layout="paper-ink.data.geo-bubble-map" data-layout-source="gallery" data-vnext-semantic-key-map='[{"key":"map.text.001","tag":"text","text":"REGION TOTALS","occurrence":0},{"key":"map.text.002","tag":"text","text":"117","occurrence":0},{"key":"map.text.003","tag":"text","text":"部署节点总数（个）","occurrence":0},{"key":"map.text.004","tag":"text","text":"3,842","occurrence":0},{"key":"map.text.005","tag":"text","text":"在线推理实例（路）","occurrence":0},{"key":"map.text.006","tag":"text","text":"21","occurrence":0},{"key":"map.text.007","tag":"text","text":"覆盖城市（个）","occurrence":0},{"key":"map.text.008","tag":"text","text":"96","occurrence":0},{"key":"map.text.009","tag":"text","text":"日均调用量（万次）","occurrence":0}]' data-emphasis-targets='[{"target_id":"focus.nodes-total","members":[{"selector":"[data-vnext-text-key=\"map.text.002\"], [data-vnext-text-key=\"map.text.003\"]","role":"value","treatment":"focus.text","expected_count":2}]},{"target_id":"focus.inference-instances","members":[{"selector":"[data-vnext-text-key=\"map.text.004\"], [data-vnext-text-key=\"map.text.005\"]","role":"value","treatment":"focus.text","expected_count":2}]},{"target_id":"focus.city-coverage","members":[{"selector":"[data-vnext-text-key=\"map.text.006\"], [data-vnext-text-key=\"map.text.007\"]","role":"value","treatment":"focus.text","expected_count":2}]},{"target_id":"focus.daily-calls","members":[{"selector":"[data-vnext-text-key=\"map.text.008\"], [data-vnext-text-key=\"map.text.009\"]","role":"value","treatment":"focus.text","expected_count":2}]}]'>
+<head>
+<meta charset="UTF-8">
+<title>layout-c4 · 区域分布地图 · AI 覆盖</title>
+<script src="../../../../runtime/stage-fit.js"></script>
+<link rel="stylesheet" href="../../../../themes/engine/assets/design-tokens.css">
+<link rel="stylesheet" href="../../../../themes/packages/paper-ink/theme.css">
+<link rel="stylesheet" href="../../../../themes/packages/hermes-orange/theme.css">
+<link rel="stylesheet" href="../../../../themes/packages/klein-blue/theme.css">
+<link rel="stylesheet" href="../../../../themes/engine/assets/catalog-fonts.css" data-wise-catalog-fonts="true">
+<link rel="stylesheet" href="../../../../themes/engine/assets/slide-components.css">
+<link rel="stylesheet" href="../../../shell.css">
+<!-- ECharts 纸墨化（规约见 ../../../references/component-adapters.md）：仅用于真实地理分布图 -->
+<script src="../../../../capabilities/vendors/echarts/echarts.min.js"></script>
+<script src="../../../../capabilities/vendors/geo/guangdong-geo.js"></script>
+<style>
+  svg.scene { position: absolute; inset: 0; z-index: 1; }
+  /* ECharts 地图画布：铺在主图区，让 registerMap 渲染真实省/市界 */
+  #chart {
+    position: absolute;
+    left: 120px; top: 131px;
+    width: 1095px; height: 750px;
+    z-index: 2;
+  }
+  /* SVG 节点叠层：盖在 echarts canvas 之上，画双圈节点/数值/城市名 */
+  svg.overlay {
+    position: absolute; left: 0; top: 0;
+    width: 1920px; height: 1080px;
+    z-index: 3; pointer-events: none;
+  }
+  .caption {
+    position: absolute; left: 0; right: 0; bottom: 118px;
+    text-align: center;
+    font-family: var(--sans); font-weight: 400;
+    font-size: var(--type-caption); letter-spacing: .04em;
+    color: var(--ink);
+    z-index: 5;
+  }
+</style>
+</head>
+<body class="slide">
+<div class="stage" data-block-id="gallery-primary" data-renderer-kind="svg" data-component-source="native" data-component-id="native.wise-ppt.data.geo-bubble-map.map" data-content-ref="example.c4">
+  <div class="doc tl">PPT 标题<br>页面标题</div>
+  <div class="folio">页码 / 总页数 — BY @歪斯Wise</div>
+
+  <svg class="scene" width="1920" height="1080" viewBox="0 0 1920 1080">
+    <g id="draw"></g>
+  </svg>
+  <div id="chart"></div>
+  <svg class="overlay" viewBox="0 0 1920 1080">
+    <g id="nodes"></g>
+  </svg>
+
+  <div class="caption">示例：六座城市组成区域服务网络，节点部署与日均调用量集中在核心城市区。</div>
+</div>
+
+<script src="../../../../themes/packages/paper-ink/assets/particles.js"></script>
+<script>
+/* 外观属性先于绘制代码落地：地图色阶与图例在解析期就要取
+   默认身份通道，不能等脚本末尾的 stageFit()。 */
+(function(){
+  var p=new URLSearchParams(location.search).get('preset');
+  if(p)document.documentElement.dataset.themePreset=p;
+})();
+var NS = 'http://www.w3.org/2000/svg';
+var INK = 'var(--ink)';
+var INK70 = 'var(--ink-70)';
+var INK45 = 'var(--ink-45)';
+var INK15 = 'color-mix(in srgb, var(--ink) 15%, transparent)';
+var G = document.getElementById('draw');
+G = el('g', {transform:'translate(0 -34.2)'});
+function el(tag, attrs) {
+  var e = document.createElementNS(NS, tag);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  G.appendChild(e); return e;
+}
+function txt(x, y, str, attrs) {
+  var t = el('text', Object.assign({x:x, y:y}, attrs||{}));
+  t.textContent = str; return t;
+}
+var CATALOG_FONTS = document.documentElement.dataset.wiseCatalogFonts === 'true';
+var MONO = CATALOG_FONTS ? 'Courier Prime Catalog' : 'Courier Prime';
+var SANS = CATALOG_FONTS ? 'Han Sans Catalog Light' : 'Han Sans';
+
+/* ---------- 色阶配方：地图使用主题身份色阶 ----------
+   未覆盖城市一律填深一度纸色（color-mix(in srgb, var(--paper-deep) 55%, transparent)，--paper-deep 系），仅覆盖城市按仓数分档上色。
+   visualMap（地图）与左下角图例从同一 RAMP 生成，保证 1:1 对应。 */
+/* 纸墨的 functional 是中性墨灰；橙蓝的 functional 是主题色。
+   地图色阶只跟随默认身份通道，不读取语义强调色。 */
+var RAMP_RGB = (function(){
+  try {
+    var v = getComputedStyle(document.documentElement).getPropertyValue('--wp-color-functional').trim();
+    var m = /^#([0-9a-f]{6})$/i.exec(v);
+    if (m) { var n = parseInt(m[1], 16); return ((n >> 16) & 255) + ',' + ((n >> 8) & 255) + ',' + (n & 255); }
+  } catch (e) {}
+  return '25,25,23';
+})();
+var RAMP_LO = .12;
+var RAMP_HI = .55;
+/* 六档 alpha：仓数越高越饱和，与六个城市的 value 线性对应 */
+function rampAlpha(v){
+  var mn = 6, mx = 42;
+  if (v <= mn) return RAMP_LO;
+  if (v >= mx) return RAMP_HI;
+  return +(RAMP_LO + (v - mn) / (mx - mn) * (RAMP_HI - RAMP_LO)).toFixed(3);
+}
+function rampColor(v){ return 'rgba(' + RAMP_RGB + ',' + rampAlpha(v) + ')'; }
+function resolvedCssColor(value){
+  var probe = document.createElement('span');
+  probe.style.color = value;
+  document.body.appendChild(probe);
+  var resolved = getComputedStyle(probe).color;
+  probe.remove();
+  return resolved;
+}
+/* 图例用的 5 档展示 alpha（从最浅到最深） */
+var RAMP_LEGEND = [.12,.27,.40,.52,.65].map(function(frac){
+  return +(RAMP_LO + frac * (RAMP_HI - RAMP_LO)).toFixed(3);
+});
+
+
+/* 左右不对称蓝图 empty-c4：主槽 120–1215 (1095)，缝 38，辅槽 1253–1800 (547) */
+var SLOT1_X = 120, SLOT1_R = 1215;
+var SLOT2_X = 1253, SLOT2_R = 1800;
+
+/* ---------- 经纬构造线（测绘底稿，不擦除）—— 经线随地图居中后重锚 ---------- */
+[566, 780].forEach(function(x){
+  el('line', {x1:x, y1:170, x2:x, y2:850, stroke:INK, 'stroke-width':.5, opacity:.14, 'stroke-dasharray':'2 6'});
+});
+
+/* ---------- 右侧 KPI 栏：贴辅槽左缘、规则拉满槽宽 ---------- */
+txt(SLOT2_X, 226, 'REGION TOTALS', {'font-family':MONO, 'font-size':'var(--type-meta)', 'letter-spacing':3, fill:INK45});
+el('line', {'data-vnext-visual-key':'c4.kpi-title-rule', x1:SLOT2_X, y1:242, x2:SLOT2_R, y2:242, stroke:INK, 'stroke-width':2, opacity:1});
+var kpis = [
+  ['117',   '部署节点总数（个）'],
+  ['3,842', '在线推理实例（路）'],
+  ['21',    '覆盖城市（个）'],
+  ['96',    '日均调用量（万次）']
+];
+kpis.forEach(function(k, i){
+  var y = 340 + i * 157;
+  txt(SLOT2_X, y, k[0], {'font-family':MONO, 'font-size':'var(--type-metric)', 'letter-spacing':1, fill:INK});
+  txt(SLOT2_X, y+40, k[1], {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-body-small)', fill:INK70});
+  if (i < kpis.length - 1)
+    el('line', {x1:SLOT2_X, y1:y+66, x2:SLOT2_R, y2:y+66, stroke:INK, 'stroke-width':.6, opacity:.25});
+});
+
+/* ---------- 图例（左下）：少 色阶 多 横排 —— 与地图同配方（RAMP），1:1 对应 ---------- */
+var rampY = 845, rampX = 120, rampStep = 22, rampH = 12;
+txt(rampX, rampY + 6, '少', {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-micro-secondary)', fill:INK45});
+RAMP_LEGEND.forEach(function(a, i){
+  el('rect', {x:rampX + 24 + i*rampStep, y:rampY - rampH/2, width:rampStep-2, height:rampH,
+    fill:'var(--wp-color-functional)', 'fill-opacity':a, stroke:INK, 'stroke-width':.5, opacity:.9});
+});
+txt(rampX + 24 + 5*rampStep + 8, rampY + 6, '多', {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-micro-secondary)', fill:INK45});
+
+/* ---------- 左上注记行：左缘与左下色阶共线（x=200），顶与 REGION TOTALS(226) 对齐 ---------- */
+txt(120, 228, 'FILL INTENSITY = NODES · SAMPLE REGION · MAP DATA © DATAV.GEOATLAS', {'font-family':MONO, 'font-size':'var(--type-micro-secondary)', 'letter-spacing':2, fill:INK45});
+
+/* ===================== ECharts 区域地图（纸墨化） =====================
+   分工：ECharts geo 只渲染市界（21 地级市），节点（双圈+数值+
+   城市名）全部由 SVG overlay 在 canvas 之上绘制，保证纸墨线稿手法
+   与字体一致、层级干净。 */
+
+/* 六个覆盖城市：中性示例城市名 + 部署节点数 + 经纬度 + 延伸线方向（弧度）
+   labelDir 用于规避珠三角城市群的密集重叠：节点数标签沿引线甩到不同方向。
+   城市名必须与 GeoJSON properties.name 完全一致（含「市」），供 series.map 匹配。 */
+var NODES = [
+  {city:'城市 01',lng:113.26,lat:23.13,v:42,tag:'城市 A',en:'CITY A',sid:'a', dir:Math.PI, focus:true}, /* 正左，出图 */
+  {city:'城市 03',lng:114.06,lat:22.55,v:27,tag:'城市 B',en:'CITY B',sid:'b',  dir:0.55},           /* 右下，出图 */
+  {city:'城市 06',lng:113.12,lat:23.02,v:19,tag:'城市 C',en:'CITY C',sid:'c',    dir:-2.36},          /* 左上，出图 */
+  {city:'城市 17',lng:113.75,lat:23.05,v:14,tag:'城市 D',en:'CITY D',sid:'d',  dir:-0.45},          /* 右上，出图 */
+  {city:'城市 04',lng:113.58,lat:22.27,v:9, tag:'城市 E',en:'CITY E',sid:'e',    dir:1.15},           /* 下方偏右，出图 */
+  {city:'城市 05',lng:116.68,lat:23.35,v:6, tag:'城市 F',en:'CITY F',sid:'f',   dir:0}               /* 正右，出图 */
+];
+
+/* overlay 层的绘制工具（独立于 #draw，因 overlay 在更高 z 层） */
+var ONodes = document.getElementById('nodes');
+function oEl(tag, attrs){
+  var e = document.createElementNS(NS, tag);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  ONodes.appendChild(e); return e;
+}
+function oTxt(x, y, str, attrs){
+  var t = oEl('text', Object.assign({x:x, y:y}, attrs||{}));
+  t.textContent = str; return t;
+}
+
+/* 地图数据由本地脚本预载，file:// 双击放映不发起网络请求。 */
+function loadMap(){
+  if (!window.WISE_GUANGDONG_GEO) return Promise.reject(new Error('local geo asset missing'));
+  return Promise.resolve(window.WISE_GUANGDONG_GEO);
+}
+
+Promise.all([
+  loadMap(),
+  document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()
+]).then(function(values){
+  var geo = values[0];
+  echarts.registerMap('guangdong', geo);
+
+  var chart = echarts.init(document.getElementById('chart'), null, {renderer: 'svg'});
+  var neutralAreaColor = resolvedCssColor('color-mix(in srgb, var(--paper-deep) 55%, transparent)');
+  var mapLabelColor = resolvedCssColor('color-mix(in srgb, var(--ink) 32%, transparent)');
+  chart.setOption({
+    animation: false,
+    backgroundColor: 'transparent',
+    series: [{
+      type: 'map',
+      map: 'guangdong',
+      roam: false,
+      /* 逐城市指定填色，避免 visualMap 分档把非目标行政区卷入主题焦点。 */
+      data: NODES.map(function(n){
+        return {
+          name: n.city,
+          value: n.v,
+          itemStyle: { areaColor: rampColor(n.v) }
+        };
+      }),
+      itemStyle: {
+        /* 无数据城市底色（visualMap 管不到非数据城市）：深一度纸色，避免大面积白块 */
+        areaColor: neutralAreaColor,
+        borderColor: INK,
+        borderWidth: 0.8,
+        shadowBlur: 0
+      },
+      emphasis: { disabled: true, label: { show: false } },
+      select: { disabled: true },
+      label: {
+        show: true,
+        color: mapLabelColor,
+        fontFamily: MONO,
+        fontSize: paperInkTypeSize('micro-secondary')
+      },
+      layoutCenter: ['50%', '50%'],
+      layoutSize: '72%'
+    }]
+  });
+
+  /* ---- 节点数标注：延伸线从城市中心拉到地图外，圆点气泡不再使用 ----
+     convertToPixel 在 series.map 下用 'series' 坐标系反查经纬度。 */
+  var OFFX = 120, OFFY = 131;
+  function drawCallouts(){
+    ONodes.innerHTML = '';
+    NODES.forEach(function(p){
+      var xy;
+      try { xy = chart.convertToPixel({seriesIndex:0}, [p.lng, p.lat]); } catch(e) { xy = null; }
+      if (!xy) return;
+      var x = xy[0] + OFFX, y = xy[1] + OFFY;
+      /* 城市锚点小圆点（标记经纬度落点，替代原气泡） */
+      oEl('circle', {id:p.focus?'c4-focus-marker':'', cx:x, cy:y, r:2.4, fill:INK, opacity:.7});
+
+      /* 延伸线终点：沿 dir 方向外推固定长度 */
+      var lead = 135;
+      var ax = x + Math.cos(p.dir) * lead;
+      var ay = y + Math.sin(p.dir) * lead;
+      /* 延伸线（细实线，墨 35%） */
+      oEl('line', {x1:x + Math.cos(p.dir)*4, y1:y + Math.sin(p.dir)*4,
+                   x2:ax, y2:ay, stroke:INK, 'stroke-width':.7, opacity:.35});
+      /* 线末端小横杠（制图标注感） */
+      var perp = p.dir + Math.PI/2;
+      oEl('line', {x1:ax + Math.cos(perp)*5, y1:ay + Math.sin(perp)*5,
+                   x2:ax - Math.cos(perp)*5, y2:ay - Math.sin(perp)*5,
+                   stroke:INK, 'stroke-width':.9, opacity:.6});
+      /* 文字对齐方向：右半平面左对齐，左半平面右对齐 */
+      var anchor = Math.cos(p.dir) >= 0 ? 'start' : 'end';
+      var tx = ax + (anchor === 'start' ? 8 : -8);
+      /* 节点数（mono 大字）+ 城市名（中文）+ mono EN 注 */
+      oTxt(tx, ay - 6, p.v + ' 节点', {id:p.focus?'sample-focus':'c4-city-'+p.sid, 'font-family':MONO, 'font-size':'var(--type-body)', 'letter-spacing':1, 'text-anchor':anchor, fill:INK});
+      oTxt(tx, ay + 18, p.tag + '·' + p.en, {id:p.focus?'c4-focus-city':'', 'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-meta)', 'letter-spacing':1, 'text-anchor':anchor, fill:INK70});
+    });
+    WisePPTStageFit.bindSpecimenEmphasis(document.documentElement);
+  }
+
+  /* 字体已稳定且 animation=false；再等两帧并主动 flush，之后才允许 seed/Catalog 固化画布。 */
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){
+      if (chart.getZr && chart.getZr().flush) chart.getZr().flush();
+      // Keep chart paint as theme tokens when the canonical seed is frozen.
+      // SVG retains geometry and labels without baking the paper-ink palette into PNG.
+      var mapSvg = document.querySelector('#chart svg');
+      mapSvg.setAttribute('data-contract-only', 'true');
+      mapSvg.querySelectorAll('path[fill]').forEach(function(shape){
+        var fill = shape.getAttribute('fill').replace(/\s/g, '');
+        if (fill === 'rgb(' + RAMP_RGB + ')') {
+          shape.setAttribute('fill', 'var(--wp-color-functional)');
+          shape.setAttribute('data-vnext-visual-role', 'c4.data-area');
+        } else if (shape.getAttribute('fill') === neutralAreaColor) {
+          shape.setAttribute('fill', 'color-mix(in srgb, var(--wp-color-surface-recessed) 55%, transparent)');
+        }
+      });
+      mapSvg.querySelectorAll('text').forEach(function(label){
+        label.setAttribute('fill', 'color-mix(in srgb, var(--ink) 32%, transparent)');
+      });
+      drawCallouts();
+      delete document.documentElement.dataset.renderPending;
+      markRenderReady();
+    });
+  });
+});
+
+stageFit();
+</script>
+</body>
+</html>

@@ -1,5 +1,14 @@
 # 更新记录
 
+## v0.2.0 — 2026-09-20
+
+1. 新增 Wise PPT：原样保留官方发行包、设计规范、校验逻辑、LICENSE 与 NOTICE，支持离线 16:9 HTML 演示和同源 PDF。
+2. 固定官方提交 `9743b49ce2307b1fec2cbb9a87a4eebe29576dc2`；未采用最新 `c3bb934`，因为 README 变更但发行清单哈希未更新。没有手改清单绕过检查。
+3. 新增上游 bundle manifest 校验：CI 在本仓 inventory 之外逐项比对 Wise 官方清单。
+4. 增补来源、依赖、用法和验证记录，详见 [Wise PPT 接入说明](docs/WISE-PPT.md)。要求 Windows/macOS、Node 22/24 LTS、Google Chrome 132+；首次 build 可能下载字体，不承诺原生可编辑 PPTX。
+5. 本次不启用或修改 TeamAI 全局自动同步、MCP 或其他 Skill；已接入机器通过 `teamai pull` 获取新增能力。
+6. 回退：对本次合并提交运行 `git revert` 并提 PR；本机保留用户修改后可将新增 wise-ppt 移出全局 skills。不要回退到校验失败的 c3bb934。
+
 ## v0.1.0 — 2026-09-15
 
 1. 建立可能商用的跨机器共享 Harness，首个接入目标为 Codex。

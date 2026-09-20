@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "imports": {
+    "#wise-export-deck": "./export-deck.mjs",
+    "#wise-html": "./vendor-cheerio.mjs",
+    "#wise-pdf-reader": "./vendor-pdf-reader.mjs"
+  }
+}

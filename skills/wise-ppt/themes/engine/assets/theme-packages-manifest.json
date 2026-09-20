@@ -1,0 +1,35 @@
+{
+  "contract": "wise-ppt-theme-packages-manifest@1",
+  "registry": "themes/registry.json",
+  "registered_theme_ids": [
+    "paper-ink",
+    "hermes-orange",
+    "klein-blue"
+  ],
+  "packages": [
+    {
+      "theme_id": "paper-ink",
+      "definition": "themes/packages/paper-ink/theme.json",
+      "definition_sha256": "6f96a63dda10377370f368f5dc1244bcc22c5ab7c3d1566d0091a911be9e85dd",
+      "css": "themes/packages/paper-ink/theme.css",
+      "css_sha256": "b67fa67fa146523a7f0ae99548319c809836a556b804ddeec3ce77186946ea0b",
+      "resolved_sha256": "b0059eb3ddc47baad9739fb81379d23af0c1467a87b482931e1ffec4f123b1c5"
+    },
+    {
+      "theme_id": "hermes-orange",
+      "definition": "themes/packages/hermes-orange/theme.json",
+      "definition_sha256": "347aad689c0ff569d287582b9215a57dea97e815d4baf3dd07b5b0e31b6fd302",
+      "css": "themes/packages/hermes-orange/theme.css",
+      "css_sha256": "4df990d8ef81990a82d9ee18d2cb6c4c864b94e3400b19eb76cd129a9c17f4f7",
+      "resolved_sha256": "d7cf02f567e400ecdf8e052979e49a8c3c3e03597a7312315737cd3bc4379ca9"
+    },
+    {
+      "theme_id": "klein-blue",
+      "definition": "themes/packages/klein-blue/theme.json",
+      "definition_sha256": "ac74362c085dc77ad84ae8e154a6d8cd9bb7d227da2ef2aedfc738bff395d1c2",
+      "css": "themes/packages/klein-blue/theme.css",
+      "css_sha256": "1f950c997a589acc61a6b4c2de41860d3a144c0d0bb6f97c1c0a7f988fad1468",
+      "resolved_sha256": "bc825b715ee40a9e1efb59f3cd5d7534c55d6a0bff3b99b419c9a2575ca4046e"
+    }
+  ]
+}
