@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "baseline": "v0.1.0",
+  "baseline": "v0.2.0",
   "teamai": {
     "version": "0.24.0",
     "source": "https://github.com/Tencent/teamai-cli",
@@ -34,6 +34,17 @@
       "license": "AGPL-3.0 core; bundled proprietary export engine retains its own LICENSE.",
       "importedAt": "2026-09-15",
       "changes": "Copied upstream root LICENSE into the skill root; no other skill content changes."
+    },
+    {
+      "name": "wise-ppt",
+      "version": "git-9743b49",
+      "source": "https://github.com/WiseWong6/wise-ppt",
+      "commit": "9743b49ce2307b1fec2cbb9a87a4eebe29576dc2",
+      "sourcePath": ".",
+      "bundleManifest": "bundle-manifest.json",
+      "license": "AGPL-3.0; bundled third-party assets retain their own licenses and attribution requirements in NOTICE.",
+      "importedAt": "2026-09-20",
+      "changes": "No upstream file changes. Pinned the preceding official release because HEAD c3bb934 changed README.md without updating its bundle hash."
     }
   ],
   "excluded": [

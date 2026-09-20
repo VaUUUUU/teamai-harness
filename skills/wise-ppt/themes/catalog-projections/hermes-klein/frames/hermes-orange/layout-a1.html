@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-runtime="wise-ppt-specimen" data-theme-id="hermes-orange" data-typography-mode="mixed" data-wise-catalog-fonts="true" data-page-id="gallery-ai-a1" data-page-role="prove" data-page-kind="relationship" data-layout-id="wise-ppt.layout.relationship.A1" data-layout-code="A1" data-layout-source="canonical-seed" data-layout-seed-sha256="ffea9d089bbf17e7fd435035605aeaf5a367ef646bf0c37966d51a8bedc89cbf" data-layout-structure-sha256="c45940029f3a661bdc5c127d484ce806f54610c934204715e0c60ee524bc9ac9" data-layout-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7" data-layout-visual-materialization="c825edcaf6ba10ed3f3b2226bfd7ed9f6707acf029b20b2b4846c7ef8ee4cdae" data-resolved-theme-sha256="5adc40cf2a064bbf45005d722370884f41798a020723bcc73d57fdf508ba1921" data-layout-visual-source="wise-ppt-layout-theme-bindings@3" data-catalog-frame-id="hermes-orange:a1" data-catalog-frame-ready="true">
+<head>
+<meta charset="UTF-8">
+<title>layout-a1 · 标本卡(对话批注)</title>
+<script src="../../../../../runtime/stage-fit.js"></script>
+<link rel="stylesheet" href="../../../../../themes/engine/assets/design-tokens.css">
+<link rel="stylesheet" href="../../../../../themes/packages/paper-ink/theme.css">
+<link rel="stylesheet" href="../../../../../themes/packages/hermes-orange/theme.css">
+<link rel="stylesheet" href="../../../../../themes/packages/klein-blue/theme.css">
+<link rel="stylesheet" href="../../../../../themes/engine/assets/catalog-fonts.css" data-wise-catalog-fonts="true">
+<link rel="stylesheet" href="../../../../../themes/engine/assets/slide-components.css">
+<link rel="stylesheet" href="../../../../../themes/engine/assets/component-theme.css">
+<link rel="stylesheet" href="../../../../../runtime/component-behavior.css">
+<link rel="stylesheet" href="../../../../../runtime/deck-component-contract.css">
+<link rel="stylesheet" href="../../../../../references/shell.css">
+<style data-layout-seed-css="ffea9d089bbf17e7fd435035605aeaf5a367ef646bf0c37966d51a8bedc89cbf">@scope (.slide[data-layout-id="wise-ppt.layout.relationship.A1"]) {
+svg.scene { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+
+  /* 标本面板：AI 估分对话原件 */
+  .specimen {
+    position: absolute;
+    left: 500px; top: 161.5px;
+    width: 920px;
+    background: var(--paper-panel);
+    border: 1px solid var(--wp-color-divider);
+    border-radius: 18px;
+    box-shadow: var(--shadow-specimen);
+    overflow: hidden;
+    z-index: 2;
+  }
+  .specbar {
+    display: flex; align-items: center; gap: var(--space-3);
+    padding: var(--space-4) var(--space-6);
+    border-bottom: 1px solid var(--ink-25);
+  }
+  .specbar .dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--wp-color-divider); }
+  .specbar .t {
+    font-family: var(--mono); font-size: var(--type-meta); letter-spacing: .25em;
+    color: var(--ink-45); margin-left: var(--space-3);
+  }
+  .specbody { padding: 28px var(--space-8) var(--space-6); }
+
+  .msg { display: flex; gap: var(--space-4); margin-bottom: var(--space-6); align-items: flex-start; }
+  .avatar {
+    flex: none; width: 52px; height: 52px; border-radius: 50%;
+    border: 1px solid var(--wp-color-divider);
+    display: grid; place-items: center;
+    font-family: var(--sans); font-weight: 400; font-size: var(--type-label);
+    background: var(--paper-panel);
+  }
+  .bub {
+    max-width: 740px;
+    padding: var(--space-4) var(--space-6);
+    border: 1px solid var(--wp-color-divider);
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    font-family: var(--sans); font-weight: 300;
+    font-size: var(--type-body); line-height: 1.8;
+  }
+  .msg.user { flex-direction: row-reverse; }
+  .msg.user .bub { border-bottom-right-radius: 4px; font-weight: 400; background: var(--paper-panel); }
+  .msg.ai .bub { border-bottom-left-radius: 4px; }
+  .bub .sc { font-family: var(--mono); font-size: var(--type-subheading); color: var(--ink); }
+  .bub .rs { color: var(--ink-45); font-size: var(--type-body-small); }
+  .bub .item { display: flex; gap: var(--space-3); margin-top: var(--space-2); }
+  .bub .item .pt { flex: none; padding-top: var(--space-3); font-size: var(--type-micro-secondary); color: var(--ink-45); }
+  .bub .wrong { font-weight: 400; }
+
+  /* 居中手写批注 */
+  .note {
+    position: absolute; left: 50%; top: 697.5px;
+    transform: translateX(-50%) rotate(-1.5deg);
+    text-align: center;
+    z-index: 4;
+    font-family: var(--brush);
+    color: var(--ink);
+  }
+  .note .big { font-size: var(--type-hero); line-height: 1.2; }
+  .note .sub { font-size: var(--type-heading); margin-top: var(--space-2); color: var(--ink-70); }
+
+  .caption {
+    position: absolute; left: 0; right: 0; bottom: 108px;
+    text-align: center;
+    font-family: var(--sans); font-weight: 400;
+    font-size: var(--type-caption); letter-spacing: .04em;
+    color: var(--ink);
+    z-index: 5;
+  }
+
+
+/* 已确认横版样式；只作用于主题生成页。 */
+.stage[data-theme-visual-source] .specimen { border-radius: 0 !important; }
+.stage[data-theme-visual-source] #a1-note .big, .stage[data-theme-visual-source] #a1-note .big *, .stage[data-theme-visual-source] #a1-note .sub { font-family: var(--brush) !important; font-weight: 300 !important; }
+.stage[data-theme-visual-source] #a1-answer-start { margin-right: .25em; }
+}
+</style>
+<style data-layout-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7">/* wise-ppt-layout-visual-plan@1 · wise-ppt.layout.relationship.A1 · b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7 */
+body.slide > .stage[data-theme-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7"], body.slide > .stage[data-theme-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7"] [data-component-theme-scope="true"] { --wp-layout-structural: var(--wp-color-primary); --wp-layout-functional: var(--wp-color-functional); --wp-color-body: color-mix(in srgb, var(--wp-color-primary) 70%, transparent); --wp-color-chart-label: color-mix(in srgb, var(--wp-color-primary) 55%, transparent); --wp-color-metadata: color-mix(in srgb, var(--wp-color-primary) 45%, transparent); --wp-color-divider: color-mix(in srgb, var(--wp-color-primary) 20%, transparent); --wp-color-construction: color-mix(in srgb, var(--wp-color-primary) 12%, transparent); --wp-private-ink-60: color-mix(in srgb, var(--wp-color-primary) 60%, transparent); --wp-private-ink-30: color-mix(in srgb, var(--wp-color-primary) 30%, transparent); --ink: var(--wp-color-primary); --ink-80: color-mix(in srgb, var(--wp-color-primary) 80%, transparent); --ink-70: color-mix(in srgb, var(--wp-color-primary) 70%, transparent); --ink-55: color-mix(in srgb, var(--wp-color-primary) 55%, transparent); --ink-45: color-mix(in srgb, var(--wp-color-primary) 45%, transparent); --ink-25: color-mix(in srgb, var(--wp-color-primary) 20%, transparent); --ink-12: color-mix(in srgb, var(--wp-color-primary) 12%, transparent); --wp-adapter-pi-ink: var(--wp-color-primary); --wp-adapter-pi-ink-80: color-mix(in srgb, var(--wp-color-primary) 80%, transparent); --wp-adapter-pi-ink-70: color-mix(in srgb, var(--wp-color-primary) 70%, transparent); --wp-adapter-pi-ink-60: color-mix(in srgb, var(--wp-color-primary) 60%, transparent); --wp-adapter-pi-ink-55: color-mix(in srgb, var(--wp-color-primary) 55%, transparent); --wp-adapter-pi-ink-45: color-mix(in srgb, var(--wp-color-primary) 45%, transparent); --wp-adapter-pi-ink-30: color-mix(in srgb, var(--wp-color-primary) 30%, transparent); --wp-adapter-atlas-ink: var(--wp-color-primary); --wp-adapter-atlas-ink-80: color-mix(in srgb, var(--wp-color-primary) 80%, transparent); --wp-adapter-atlas-ink-70: color-mix(in srgb, var(--wp-color-primary) 70%, transparent); --wp-adapter-atlas-ink-55: color-mix(in srgb, var(--wp-color-primary) 55%, transparent); --wp-adapter-atlas-ink-45: color-mix(in srgb, var(--wp-color-primary) 45%, transparent); --wp-adapter-atlas-ink-25: color-mix(in srgb, var(--wp-color-primary) 20%, transparent); --wp-adapter-atlas-ink-12: color-mix(in srgb, var(--wp-color-primary) 12%, transparent); --shadow-soft: none; --shadow-specimen: none; --data-ramp-1: color-mix(in srgb, var(--wp-color-primary) 8%, transparent); --wp-adapter-pi-data-1: color-mix(in srgb, var(--wp-color-primary) 8%, transparent); --wp-adapter-atlas-data-1: color-mix(in srgb, var(--wp-color-primary) 8%, transparent); --data-ramp-2: color-mix(in srgb, var(--wp-color-primary) 14%, transparent); --wp-adapter-pi-data-2: color-mix(in srgb, var(--wp-color-primary) 14%, transparent); --wp-adapter-atlas-data-2: color-mix(in srgb, var(--wp-color-primary) 14%, transparent); --data-ramp-3: color-mix(in srgb, var(--wp-color-primary) 22%, transparent); --wp-adapter-pi-data-3: color-mix(in srgb, var(--wp-color-primary) 22%, transparent); --wp-adapter-atlas-data-3: color-mix(in srgb, var(--wp-color-primary) 22%, transparent); --data-ramp-4: color-mix(in srgb, var(--wp-color-primary) 30%, transparent); --wp-adapter-pi-data-4: color-mix(in srgb, var(--wp-color-primary) 30%, transparent); --wp-adapter-atlas-data-4: color-mix(in srgb, var(--wp-color-primary) 30%, transparent); --data-ramp-5: color-mix(in srgb, var(--wp-color-primary) 40%, transparent); --wp-adapter-pi-data-5: color-mix(in srgb, var(--wp-color-primary) 40%, transparent); --wp-adapter-atlas-data-5: color-mix(in srgb, var(--wp-color-primary) 40%, transparent); --data-ramp-6: color-mix(in srgb, var(--wp-color-primary) 52%, transparent); --wp-adapter-pi-data-6: color-mix(in srgb, var(--wp-color-primary) 52%, transparent); --wp-adapter-atlas-data-6: color-mix(in srgb, var(--wp-color-primary) 52%, transparent); }
+:root[data-theme-id][data-typography-mode="mixed"] body.slide [data-theme-type-role="top-left-kicker"], :root[data-theme-id][data-typography-mode="mixed"] body.slide [data-theme-type-role="bottom-left-folio"] { font-family: var(--wp-font-oswald) !important; font-weight: 700 !important; }
+:root[data-theme-id][data-typography-mode="mixed"] body.slide [data-theme-type-role="bottom-takeaway"] { font-family: var(--wp-font-han-serif) !important; font-weight: 700 !important; }
+:root[data-theme-id][data-typography-mode="mixed"] body.slide [data-theme-type-role="zh-content-title"] { font-family: var(--wp-font-han-sans) !important; font-weight: 700 !important; }
+:root[data-theme-id][data-typography-mode="mixed"] body.slide :is([data-theme-type-role="body"], [data-theme-type-role="label"], [data-theme-type-role="number"], [data-theme-type-role="chart-text"]) { font-family: var(--wp-font-han-sans) !important; font-weight: 400 !important; }
+:root[data-theme-id][data-typography-mode="mixed"] body.slide [data-theme-language="en"]:not([data-theme-type-role="top-left-kicker"]):not([data-theme-type-role="bottom-left-folio"]):not([data-theme-type-role="bottom-takeaway"]) { font-family: var(--wp-font-oswald) !important; font-weight: 700 !important; }
+body.slide > .stage[data-theme-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7"] { background-color: var(--wp-color-surface-canvas) !important; }
+body.slide [data-theme-surface-binding-id="primary-evidence"] { background-color: var(--wp-color-surface-panel) !important; }
+body.slide svg [data-theme-surface-binding-id="primary-evidence"],
+body.slide svg [data-theme-surface-binding-id="primary-evidence"] :is(path, line, rect, circle, ellipse, polygon, polyline, use)[fill]:not([fill="none"]) { fill: var(--wp-color-surface-panel) !important; }
+body.slide [data-theme-surface-binding-id="primary-evidence"] { --wp-layout-surface-stack: 2; z-index: 2 !important; }
+body.slide [data-theme-surface-binding-id="primary-evidence"]:not([data-emphasis-active="true"]) { box-shadow: none !important; }
+body.slide svg [data-theme-surface-binding-id="primary-evidence"]:not([data-emphasis-active="true"]) { filter: none !important; }
+body.slide [data-theme-surface-binding-id="primary-evidence"] { border-color: var(--wp-color-primary) !important; border-width: 2px !important; border-style: solid !important; }
+body.slide svg [data-theme-surface-binding-id="primary-evidence"],
+body.slide svg [data-theme-surface-binding-id="primary-evidence"] :is(path, line, rect, circle, ellipse, polygon, polyline, use)[stroke]:not([stroke="none"]) { stroke: var(--wp-color-primary) !important; stroke-width: 2px !important; }
+body.slide [data-theme-furniture-role="title"] { color: var(--wp-color-functional) !important; }
+body.slide svg [data-theme-furniture-role="title"] { fill: var(--wp-color-functional) !important; }
+body.slide [data-theme-furniture-role="folio"] { color: var(--wp-color-metadata) !important; }
+body.slide svg [data-theme-furniture-role="folio"] { fill: var(--wp-color-metadata) !important; }
+body.slide [data-theme-furniture-role="takeaway"] { color: var(--wp-color-primary) !important; }
+body.slide svg [data-theme-furniture-role="takeaway"] { fill: var(--wp-color-primary) !important; }
+body.slide [data-theme-furniture-role="title"]::first-line,
+body.slide [data-theme-furniture-role="title"] [data-theme-furniture-line="first"] { color: var(--wp-color-primary) !important; }
+body.slide [data-theme-furniture-role="title"] [data-theme-furniture-line="second"] { color: var(--wp-color-functional) !important; }
+</style>
+</head>
+<body class="slide" data-page-id="gallery-ai-a1" data-page-role="prove" data-page-kind="relationship" data-layout-id="wise-ppt.layout.relationship.A1" data-layout-code="A1" data-layout-source="canonical-seed" data-layout-seed-sha256="ffea9d089bbf17e7fd435035605aeaf5a367ef646bf0c37966d51a8bedc89cbf" data-layout-structure-sha256="c45940029f3a661bdc5c127d484ce806f54610c934204715e0c60ee524bc9ac9" data-layout-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7" data-layout-visual-materialization="c825edcaf6ba10ed3f3b2226bfd7ed9f6707acf029b20b2b4846c7ef8ee4cdae" data-resolved-theme-sha256="5adc40cf2a064bbf45005d722370884f41798a020723bcc73d57fdf508ba1921" data-layout-visual-source="wise-ppt-layout-theme-bindings@3">
+<div class="stage" data-block-id="gallery-primary" data-component-id="native.wise-ppt.evidence.specimen-card.evidence" data-component-source="native" data-content-ref="example.a1" data-renderer-kind="svg" data-theme-visual-source="wise-ppt-layout-theme-bindings@3" data-theme-visual-plan="b1cce5d8947d6f664cb02c31191378708a86c0ea7c02e76f5a11f3acd5a117d7" data-theme-canvas-material="paper" data-theme-default-color-base-role="primary" data-theme-typography-resolution="structure-slots-and-explicit-language" data-theme-emphasis-target-count="1" data-theme-emphasis-sample-target="focus.main-evidence">
+<div class="doc tl" data-theme-furniture-source="wise-ppt-layout-theme-bindings@3" data-theme-furniture-role="title" data-theme-furniture-variant="primary-first-functional-second" data-theme-type-role="top-left-kicker" data-theme-type-base-role="top-left-kicker" data-theme-color-role="functional" data-theme-color-alpha="1" data-theme-title-first-color-role="primary" data-theme-title-second-color-role="functional" data-theme-language="zh"><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="support.text.001" data-theme-furniture-line="first" data-theme-type-role="top-left-kicker" data-theme-type-base-role="top-left-kicker" data-theme-color-role="primary" data-theme-language="zh">PPT &#x6807;&#x9898;</span><br><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="support.text.002" data-theme-furniture-line="second" data-theme-type-role="top-left-kicker" data-theme-type-base-role="top-left-kicker" data-theme-color-role="functional" data-theme-language="zh">&#x9875;&#x9762;&#x6807;&#x9898;</span></div>
+<div class="folio" data-theme-furniture-source="wise-ppt-layout-theme-bindings@3" data-theme-furniture-role="folio" data-theme-type-role="bottom-left-folio" data-theme-type-base-role="bottom-left-folio" data-theme-color-role="metadata" data-theme-color-alpha="1" data-theme-language="zh">&#x9875;&#x7801; / &#x603b;&#x9875;&#x6570; &#x2014; BY @&#x6b6a;&#x65af;Wise</div>
+<div class="specimen" data-theme-binding-source="wise-ppt-layout-theme-bindings@3" data-theme-surface-binding-id="primary-evidence" data-theme-surface-role="primary-evidence" data-theme-material="foreground" data-theme-stack="2" data-theme-base-shadow="none" data-theme-border="{&quot;alpha&quot;:1,&quot;color_role&quot;:&quot;primary&quot;,&quot;width_px&quot;:2}" data-theme-role-overrides="[]">
+<div class="specbar">
+<span class="dot"></span><span class="dot"></span><span class="dot"></span>
+<span class="t" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.001" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">AI ASSISTANT &#xb7; CONVERSATION NO.017</span>
+</div>
+<div class="specbody">
+<div class="msg user">
+<div class="avatar" data-vnext-fit-box="531,235,1389,314" data-vnext-text-key="evidence.text.002" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x6211;</div>
+<div class="bub" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.003" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x4f60;&#x8981;&#x662f;&#x53c2;&#x52a0;&#x9ad8;&#x8003;&#xff0c;&#x80fd;&#x8003;&#x591a;&#x5c11;&#x5206;&#x5462;&#xff1f;</div>
+</div>
+<div class="msg ai">
+<div class="avatar" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.004" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">AI</div>
+<div class="bub"><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.005" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x6309;&#x65b0;&#x9ad8;&#x8003; 750 &#x5206;&#x5236;&#xff0c;&#x6700;&#x8d34;&#x8fd1;&#x771f;&#x5b9e;&#x9605;&#x5377;&#x7684;&#x4f30;&#x5206;&#xff1a;</span><div class="item"><span class="pt" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.006" data-theme-type-role="body" data-theme-type-base-role="body">&#x25cf;</span><div><b data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.007" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x8bed;&#x6587;</b> <span class="sc" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.008" id="wrong" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">143</span><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.009" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x5206;</span><span class="rs" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.010" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x2014;&#x2014; &#x57fa;&#x7840;&#x9898;&#x8fd1;&#x6ee1;&#x5206;&#xff0c;&#x4f5c;&#x6587;&#x7f3a;&#x4e2a;&#x4eba;&#x60c5;&#x611f;&#x4e0e;&#x751f;&#x6d3b;&#x4f53;&#x9a8c;&#xff0c;&#x6263; 17 &#x5206;</span></div></div>
+<div class="item"><span class="pt" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.011" data-theme-type-role="body" data-theme-type-base-role="body">&#x25cf;</span><div><b data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.012" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x6570;&#x5b66;</b> <span class="sc" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.013" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">150</span><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.014" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x5206;</span><span class="rs" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.015" data-theme-type-role="body" data-theme-type-base-role="body" data-theme-language="zh">&#x2014;&#x2014; &#x8ba1;&#x7b97;&#x3001;&#x63a8;&#x7406;&#x3001;&#x6b65;&#x9aa4;&#x90fd;&#x80fd;&#x505a;&#x5230;&#x6ee1;&#x5206;</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="note" id="a1-note">
+<div class="big"><span data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.016" id="a1-answer-start" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">150</span><span class="vnext-text-node" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.017" data-theme-type-role="en-bold" data-theme-type-base-role="body" data-theme-language="en">&#x2212; 17 = 133</span></div>
+<div class="sub" data-vnext-fit-box="0,0,1920,1080" data-vnext-text-key="evidence.text.018" data-vnext-type-slot="content-title" data-theme-binding-source="wise-ppt-layout-theme-bindings@3" data-theme-type-binding-id="content-titles" data-theme-type-role="zh-content-title" data-theme-type-base-role="zh-content-title" data-theme-language="zh">&#x4e0d;&#x662f; 143&#x3002;</div>
+</div>
+<svg class="scene" height="1080" viewBox="0 0 1920 1080" width="1920">
+<defs>
+<marker id="a1-note-arrow" markerHeight="16" markerUnits="userSpaceOnUse" markerWidth="16" orient="auto" refX="10.5" refY="6" viewBox="0 0 12 12">
+<path d="M 1 1 L 10.5 6 L 1 11" fill="none" stroke="var(--wp-color-functional)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/>
+</marker>
+</defs>
+<g id="anno"><ellipse cx="728.71875" cy="422.1875" fill="none" id="a1-ring" rx="38.360625" ry="28.419999999999998" stroke="var(--wp-color-functional)" stroke-width="2" transform="rotate(-4 728.71875 422.1875)"/><ellipse cx="731.71875" cy="424.1875" fill="none" opacity="0.45" rx="41.1675" ry="30.450000000000003" stroke="var(--wp-color-functional)" stroke-width="1" transform="rotate(6 728.71875 422.1875)"/><path d="M 734.71875 458.1875 C 738.71875 572.1875 716.5328369140625 635.304931640625 746.5328369140625 699.304931640625" fill="none" marker-end="url(#a1-note-arrow)" stroke="var(--wp-color-functional)" stroke-linecap="round" stroke-width="1.4"/></g>
+</svg>
+<div class="caption" data-vnext-claim-key="claim.text.001" data-vnext-fit-box="0,0,1920,1080" data-theme-furniture-source="wise-ppt-layout-theme-bindings@3" data-theme-furniture-role="takeaway" data-theme-type-role="bottom-takeaway" data-theme-type-base-role="bottom-takeaway" data-theme-color-role="primary" data-theme-color-alpha="1" data-theme-language="zh">&#x8bed;&#x6587;&#x6ee1;&#x5206; 150&#xff0c;&#x6263; 17 &#x5206;&#x5e94;&#x5f97; 133 &#x5206;&#x3002;143 &#x66b4;&#x9732;&#x4e86;&#x6a21;&#x578b;&#x201c;<span data-emphasis-candidate="true" id="a1-focus-copy" data-theme-emphasis-source="wise-ppt-layout-theme-bindings@3" data-theme-emphasis-members="[{&quot;role&quot;:&quot;label&quot;,&quot;target_id&quot;:&quot;focus.main-evidence&quot;,&quot;treatment&quot;:&quot;focus.color&quot;}]" data-theme-type-role="bottom-takeaway" data-theme-type-base-role="bottom-takeaway" data-theme-language="zh">&#x89e3;&#x91ca;&#x6b63;&#x786e;&#x3001;&#x8ba1;&#x7b97;&#x9519;&#x8bef;</span>&#x201d;&#x7684;&#x5e7b;&#x89c9;&#x3002;</div>
+</div>
+<script>stageFit();</script>
+</body>
+</html>

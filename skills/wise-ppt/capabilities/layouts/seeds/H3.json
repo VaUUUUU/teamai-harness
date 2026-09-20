@@ -1,0 +1,618 @@
+{
+  "contract": "wise-ppt-layout-seed@4",
+  "layout_id": "wise-ppt.layout.relationship.H3",
+  "display_code": "H3",
+  "page_kind": "relationship",
+  "source": {
+    "path": "references/gallery-paper-ink/ai/frames/layout-h3.html",
+    "sha256": "d71091c87d65687f7944b85aec963788d63aa1cfa13ee87b1c3a8b177e1ee302"
+  },
+  "locked": {
+    "scoped_css": "@scope (.slide[data-layout-id=\"wise-ppt.layout.relationship.H3\"]) {\nsvg.scene { position: absolute; inset: 0; z-index: 1; }\n  canvas { position: absolute; inset: 0; z-index: 2; }\n  .caption {\n    position: absolute; left: 0; right: 0; bottom: 118px;\n    text-align: center;\n    font-family: var(--sans); font-weight: 400;\n    font-size: var(--type-caption); letter-spacing: .04em;\n    color: var(--ink);\n    z-index: 5;\n  }\n}\n",
+    "css_sha256": "849216535ac2800798e3bd6b33a687968af948f4429c6cde41fa21e8fe8b97e8",
+    "stage_html": "<div class=\"stage\" data-block-id=\"gallery-primary\" data-component-id=\"native.wise-ppt.nested.architecture-stack.architecture\" data-component-source=\"native\" data-content-ref=\"example.h3\" data-renderer-kind=\"svg\">\n<div class=\"doc tl\"><span class=\"vnext-text-node\" data-vnext-fit-box=\"0,0,1920,1080\" data-vnext-text-key=\"support.text.001\">PPT 标题</span><br/><span class=\"vnext-text-node\" data-vnext-fit-box=\"0,0,1920,1080\" data-vnext-text-key=\"support.text.002\">页面标题</span></div>\n<div class=\"folio\">页码 / 总页数 — BY @歪斯Wise</div>\n<svg class=\"scene\" height=\"1080\" viewbox=\"0 0 1920 1080\" width=\"1920\">\n<g id=\"draw\"><g transform=\"translate(0 +2.3)\"><rect data-vnext-visual-key=\"h3.architecture-surface\" fill=\"var(--wp-color-surface-panel)\" height=\"528\" stroke=\"var(--ink-80)\" stroke-width=\"1.3\" width=\"1620\" x=\"150\" y=\"240\"></rect><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"150\" x2=\"1770\" y1=\"372\" y2=\"372\"></line><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"150\" x2=\"1770\" y1=\"504\" y2=\"504\"></line><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"150\" x2=\"1770\" y1=\"636\" y2=\"636\"></line><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"310\" x2=\"310\" y1=\"240\" y2=\"768\"></line><text class=\"h3-layer-code\" data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.001\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-body)\" letter-spacing=\"2\" x=\"160\" y=\"290\">L1</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.002\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body)\" font-weight=\"300\" id=\"h3-layer-L1\" x=\"160\" y=\"318\">应用层</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.003\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"2\" x=\"160\" y=\"340\">APPLICATION</text><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"160\" x2=\"230\" y1=\"354\" y2=\"354\"></line><g data-vnext-visual-key=\"h3.layer-content.l1\" data-vnext-visual-role=\"h3.layer-content\"><rect fill=\"none\" height=\"36\" rx=\"8\" ry=\"8\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\" width=\"60\" x=\"520\" y=\"284\"></rect><path d=\"M 542 320 L 536 332 L 552 320\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-linejoin=\"round\" stroke-width=\"1.2\"></path><circle cx=\"538\" cy=\"302\" fill=\"var(--ink)\" r=\"2.2\"></circle><circle cx=\"550\" cy=\"302\" fill=\"var(--ink)\" r=\"2.2\"></circle><circle cx=\"562\" cy=\"302\" fill=\"var(--ink)\" r=\"2.2\"></circle><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.004\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"604\" y=\"302\">CHAT</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.005\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"604\" y=\"328\">对话界面</text><rect fill=\"none\" height=\"44\" rx=\"3\" ry=\"3\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\" width=\"52\" x=\"969\" y=\"284\"></rect><line opacity=\"0.45\" stroke=\"var(--ink)\" stroke-width=\"0.7\" x1=\"969\" x2=\"1021\" y1=\"296\" y2=\"296\"></line><circle cx=\"975\" cy=\"290\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"982\" cy=\"290\" fill=\"none\" opacity=\"0.5\" r=\"1.8\" stroke=\"var(--ink)\" stroke-width=\"0.7\"></circle><rect fill=\"none\" height=\"10\" opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"0.8\" width=\"12\" x=\"983\" y=\"300\"></rect><rect fill=\"none\" height=\"10\" opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"0.8\" width=\"12\" x=\"1001\" y=\"300\"></rect><rect fill=\"none\" height=\"10\" opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"0.8\" width=\"12\" x=\"983\" y=\"314\"></rect><rect fill=\"none\" height=\"10\" opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"0.8\" width=\"12\" x=\"1001\" y=\"314\"></rect><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.006\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1049\" y=\"302\">ASSIST</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.007\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1049\" y=\"328\">助手面板</text><line stroke=\"var(--ink-80)\" stroke-width=\"1.3\" x1=\"1440\" x2=\"1440\" y1=\"330\" y2=\"306\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"1440\" x2=\"1418\" y1=\"306\" y2=\"292\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"1440\" x2=\"1440\" y1=\"306\" y2=\"288\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"1440\" x2=\"1462\" y1=\"306\" y2=\"292\"></line><circle cx=\"1440\" cy=\"332\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1440\" cy=\"332\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"1416\" cy=\"291\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1416\" cy=\"291\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"1440\" cy=\"286\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1440\" cy=\"286\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"1464\" cy=\"291\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1464\" cy=\"291\" fill=\"var(--ink)\" r=\"1.8\"></circle><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.008\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1494\" y=\"302\">API HUB</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.009\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1494\" y=\"328\">开放接口</text></g><text class=\"h3-layer-code\" data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.010\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-body)\" letter-spacing=\"2\" x=\"160\" y=\"422\">L2</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.011\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body)\" font-weight=\"300\" id=\"sample-focus\" x=\"160\" y=\"450\">模型层</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.012\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"2\" x=\"160\" y=\"472\">MODEL</text><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"160\" x2=\"230\" y1=\"486\" y2=\"486\"></line><g data-vnext-visual-key=\"h3.layer-content.l2\" data-vnext-visual-role=\"h3.layer-content\"><circle cx=\"550\" cy=\"438\" fill=\"none\" r=\"22\" stroke=\"var(--ink-80)\" stroke-width=\"1.3\"></circle><circle cx=\"550\" cy=\"438\" fill=\"none\" r=\"7\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\"></circle><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"572\" x2=\"579\" y1=\"438\" y2=\"438\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"565.5563491861041\" x2=\"570.5060966544099\" y1=\"453.55634918610406\" y2=\"458.5060966544099\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"550\" x2=\"550\" y1=\"460\" y2=\"467\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"534.4436508138959\" x2=\"529.4939033455901\" y1=\"453.55634918610406\" y2=\"458.5060966544099\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"528\" x2=\"521\" y1=\"438\" y2=\"438\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"534.4436508138959\" x2=\"529.4939033455901\" y1=\"422.44365081389594\" y2=\"417.4939033455901\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"550\" x2=\"550\" y1=\"416\" y2=\"409\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.6\" x1=\"565.5563491861041\" x2=\"570.5060966544099\" y1=\"422.44365081389594\" y2=\"417.4939033455901\"></line><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.013\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"604\" y=\"434\">LLM</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.014\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"604\" y=\"460\">大语言模型</text><rect fill=\"none\" height=\"34\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\" width=\"26\" x=\"967\" y=\"418\"></rect><line opacity=\"0.6\" stroke=\"var(--ink)\" stroke-width=\"0.8\" x1=\"972\" x2=\"988\" y1=\"426\" y2=\"426\"></line><line opacity=\"0.6\" stroke=\"var(--ink)\" stroke-width=\"0.8\" x1=\"972\" x2=\"988\" y1=\"433\" y2=\"433\"></line><line opacity=\"0.6\" stroke=\"var(--ink)\" stroke-width=\"0.8\" x1=\"972\" x2=\"983\" y1=\"440\" y2=\"440\"></line><circle cx=\"1007\" cy=\"436\" fill=\"none\" r=\"11\" stroke=\"var(--ink-80)\" stroke-width=\"1.3\"></circle><line stroke=\"var(--ink-80)\" stroke-linecap=\"round\" stroke-width=\"1.8\" x1=\"1015\" x2=\"1023\" y1=\"444\" y2=\"452\"></line><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.015\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1049\" y=\"434\">RAG</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.016\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1049\" y=\"460\">检索增强</text><circle cx=\"1440\" cy=\"438\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1440\" cy=\"438\" fill=\"var(--ink)\" r=\"1.8\"></circle><line stroke=\"var(--ink-80)\" stroke-width=\"1.1\" x1=\"1440\" x2=\"1414\" y1=\"438\" y2=\"424\"></line><circle cx=\"1414\" cy=\"424\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1414\" cy=\"424\" fill=\"var(--ink)\" r=\"1.8\"></circle><line stroke=\"var(--ink-80)\" stroke-width=\"1.1\" x1=\"1440\" x2=\"1466\" y1=\"438\" y2=\"424\"></line><circle cx=\"1466\" cy=\"424\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1466\" cy=\"424\" fill=\"var(--ink)\" r=\"1.8\"></circle><line stroke=\"var(--ink-80)\" stroke-width=\"1.1\" x1=\"1440\" x2=\"1414\" y1=\"438\" y2=\"454\"></line><circle cx=\"1414\" cy=\"454\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1414\" cy=\"454\" fill=\"var(--ink)\" r=\"1.8\"></circle><line stroke=\"var(--ink-80)\" stroke-width=\"1.1\" x1=\"1440\" x2=\"1466\" y1=\"438\" y2=\"454\"></line><circle cx=\"1466\" cy=\"454\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1466\" cy=\"454\" fill=\"var(--ink)\" r=\"1.8\"></circle><line opacity=\"0.35\" stroke=\"var(--ink)\" stroke-dasharray=\"3 4\" stroke-width=\"0.6\" x1=\"1414\" x2=\"1466\" y1=\"424\" y2=\"424\"></line><line opacity=\"0.35\" stroke=\"var(--ink)\" stroke-dasharray=\"3 4\" stroke-width=\"0.6\" x1=\"1414\" x2=\"1466\" y1=\"454\" y2=\"454\"></line><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.017\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1494\" y=\"434\">AGENT</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.018\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1494\" y=\"460\">智能体</text></g><text class=\"h3-layer-code\" data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.019\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-body)\" letter-spacing=\"2\" x=\"160\" y=\"554\">L3</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.020\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body)\" font-weight=\"300\" id=\"h3-layer-L3\" x=\"160\" y=\"582\">数据层</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.021\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"2\" x=\"160\" y=\"604\">DATA</text><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"160\" x2=\"230\" y1=\"618\" y2=\"618\"></line><g data-vnext-visual-key=\"h3.layer-content.l3\" data-vnext-visual-role=\"h3.layer-content\"><ellipse cx=\"550\" cy=\"548\" fill=\"none\" rx=\"23\" ry=\"8\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\"></ellipse><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"527\" x2=\"527\" y1=\"548\" y2=\"592\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"573\" x2=\"573\" y1=\"548\" y2=\"592\"></line><path d=\"M 527 592 A 23 8 0 0 0 573 592\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\"></path><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.022\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"604\" y=\"566\">VEC DB</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.023\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"604\" y=\"592\">向量库</text><path d=\"M 993 552 C 981 548, 965 550, 965 556 L 965 586 C 965 592, 981 594, 993 590\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-linejoin=\"round\" stroke-width=\"1.2\"></path><path d=\"M 997 552 C 1009 548, 1025 550, 1025 556 L 1025 586 C 1025 592, 1009 594, 997 590\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-linejoin=\"round\" stroke-width=\"1.2\"></path><line opacity=\"0.5\" stroke=\"var(--ink-80)\" stroke-width=\"1\" x1=\"995\" x2=\"995\" y1=\"552\" y2=\"590\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"970\" x2=\"988\" y1=\"550\" y2=\"550\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"1002\" x2=\"1020\" y1=\"550\" y2=\"550\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"970\" x2=\"988\" y1=\"560\" y2=\"560\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"1002\" x2=\"1020\" y1=\"560\" y2=\"560\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"970\" x2=\"988\" y1=\"570\" y2=\"570\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"1002\" x2=\"1020\" y1=\"570\" y2=\"570\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"970\" x2=\"988\" y1=\"580\" y2=\"580\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"1002\" x2=\"1020\" y1=\"580\" y2=\"580\"></line><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.024\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1049\" y=\"566\">KNOWLEDGE</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.025\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1049\" y=\"592\">知识库</text><path d=\"M 1462 561.2 A 22 22 0 1 1 1424.6 554.6\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-width=\"1.4\"></path><path d=\"M 1418 578.8 A 22 22 0 1 1 1455.4 585.4\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-width=\"1.4\"></path><path d=\"M 1462 561.2 L 1467 555.2 L 1456 558.2\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.4\"></path><path d=\"M 1418 578.8 L 1413 584.8 L 1424 581.8\" fill=\"none\" stroke=\"var(--ink-80)\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.4\"></path><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.026\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1494\" y=\"566\">FEEDBACK</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.027\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1494\" y=\"592\">反馈管线</text></g><text class=\"h3-layer-code\" data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.028\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-body)\" letter-spacing=\"2\" x=\"160\" y=\"686\">L4</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.029\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body)\" font-weight=\"300\" id=\"h3-layer-L4\" x=\"160\" y=\"714\">基础层</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.030\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"2\" x=\"160\" y=\"736\">INFRA</text><line opacity=\"0.3\" stroke=\"var(--ink)\" stroke-width=\"0.6\" x1=\"160\" x2=\"230\" y1=\"750\" y2=\"750\"></line><g data-vnext-visual-key=\"h3.layer-content.l4\" data-vnext-visual-role=\"h3.layer-content\"><rect fill=\"none\" height=\"14\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"525\" y=\"677\"></rect><rect fill=\"none\" height=\"8\" opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" width=\"8\" x=\"528\" y=\"680\"></rect><rect fill=\"none\" height=\"14\" opacity=\"0.5\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"543\" y=\"677\"></rect><rect fill=\"none\" height=\"14\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"561\" y=\"677\"></rect><rect fill=\"none\" height=\"8\" opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" width=\"8\" x=\"564\" y=\"680\"></rect><rect fill=\"none\" height=\"14\" opacity=\"0.5\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"525\" y=\"695\"></rect><rect fill=\"none\" height=\"14\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"543\" y=\"695\"></rect><rect fill=\"none\" height=\"8\" opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" width=\"8\" x=\"546\" y=\"698\"></rect><rect fill=\"none\" height=\"14\" opacity=\"0.5\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"561\" y=\"695\"></rect><rect fill=\"none\" height=\"14\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"525\" y=\"713\"></rect><rect fill=\"none\" height=\"8\" opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" width=\"8\" x=\"528\" y=\"716\"></rect><rect fill=\"none\" height=\"14\" opacity=\"0.5\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"543\" y=\"713\"></rect><rect fill=\"none\" height=\"14\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-width=\"1.1\" width=\"14\" x=\"561\" y=\"713\"></rect><rect fill=\"none\" height=\"8\" opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.6\" width=\"8\" x=\"564\" y=\"716\"></rect><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.031\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"604\" y=\"698\">GPU POOL</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.032\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"604\" y=\"724\">算力集群</text><line stroke=\"var(--ink-80)\" stroke-width=\"1.3\" x1=\"995\" x2=\"995\" y1=\"726\" y2=\"702\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"995\" x2=\"973\" y1=\"702\" y2=\"688\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"995\" x2=\"995\" y1=\"702\" y2=\"684\"></line><line stroke=\"var(--ink-80)\" stroke-width=\"1.2\" x1=\"995\" x2=\"1017\" y1=\"702\" y2=\"688\"></line><circle cx=\"995\" cy=\"728\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"995\" cy=\"728\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"971\" cy=\"687\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"971\" cy=\"687\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"995\" cy=\"682\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"995\" cy=\"682\" fill=\"var(--ink)\" r=\"1.8\"></circle><circle cx=\"1019\" cy=\"687\" fill=\"none\" r=\"5\" stroke=\"var(--ink-80)\" stroke-width=\"1\"></circle><circle cx=\"1019\" cy=\"687\" fill=\"var(--ink)\" r=\"1.8\"></circle><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.033\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1049\" y=\"698\">GATEWAY</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.034\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1049\" y=\"724\">网关</text><rect fill=\"none\" height=\"20\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-dasharray=\"none\" stroke-width=\"1.1\" width=\"20\" x=\"1416.5\" y=\"678.5\"></rect><rect fill=\"none\" height=\"20\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-dasharray=\"none\" stroke-width=\"1.1\" width=\"20\" x=\"1443.5\" y=\"678.5\"></rect><rect fill=\"none\" height=\"20\" opacity=\"1\" stroke=\"var(--ink-80)\" stroke-dasharray=\"none\" stroke-width=\"1.1\" width=\"20\" x=\"1416.5\" y=\"705.5\"></rect><rect fill=\"none\" height=\"20\" opacity=\"0.45\" stroke=\"var(--ink-80)\" stroke-dasharray=\"3 3\" stroke-width=\"1.1\" width=\"20\" x=\"1443.5\" y=\"705.5\"></rect><line opacity=\"0.4\" stroke=\"var(--ink)\" stroke-width=\"0.7\" x1=\"1426.5\" x2=\"1453.5\" y1=\"702\" y2=\"702\"></line><line opacity=\"0.4\" stroke=\"var(--ink)\" stroke-width=\"0.7\" x1=\"1440\" x2=\"1440\" y1=\"688.5\" y2=\"715.5\"></line><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.035\" fill=\"var(--ink-55)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" letter-spacing=\"1.5\" x=\"1494\" y=\"698\">MONITOR</text><text data-vnext-fit-box=\"147,239,1773,774\" data-vnext-text-key=\"architecture.text.036\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-body-small)\" font-weight=\"300\" x=\"1494\" y=\"724\">监控告警</text></g></g></g>\n</svg>\n<div class=\"caption\" data-vnext-claim-key=\"claim.text.001\" data-vnext-fit-box=\"0,0,1920,1080\">应用、模型、数据与基础设施四层相互依赖，产品问题往往来自<span id=\"focus-caption\">跨层断点</span>。</div>\n</div>",
+    "stage_structure_sha256": "46b9f8df9363ec0b858520a9623b8da8165cc44750dbda435dc6aea742f6b6d9"
+  },
+  "bindings": {
+    "claim": {
+      "key": "claim.text.001",
+      "default": "应用、模型、数据与基础设施四层相互依赖，产品问题往往来自 跨层断点 。",
+      "max_chars": 39,
+      "fit_box": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+      ],
+      "fit_owner_kind": "slide"
+    },
+    "primary_slot": "architecture",
+    "slots": {
+      "architecture": {
+        "text": [
+          {
+            "key": "architecture.text.001",
+            "default": "L1",
+            "max_chars": 3,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.002",
+            "default": "应用层",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.003",
+            "default": "APPLICATION",
+            "max_chars": 15,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.004",
+            "default": "CHAT",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.005",
+            "default": "对话界面",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.006",
+            "default": "ASSIST",
+            "max_chars": 9,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.007",
+            "default": "助手面板",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.008",
+            "default": "API HUB",
+            "max_chars": 9,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.009",
+            "default": "开放接口",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.010",
+            "default": "L2",
+            "max_chars": 3,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.011",
+            "default": "模型层",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.012",
+            "default": "MODEL",
+            "max_chars": 7,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.013",
+            "default": "LLM",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.014",
+            "default": "大语言模型",
+            "max_chars": 7,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.015",
+            "default": "RAG",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.016",
+            "default": "检索增强",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.017",
+            "default": "AGENT",
+            "max_chars": 7,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.018",
+            "default": "智能体",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.019",
+            "default": "L3",
+            "max_chars": 3,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.020",
+            "default": "数据层",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.021",
+            "default": "DATA",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.022",
+            "default": "VEC DB",
+            "max_chars": 7,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.023",
+            "default": "向量库",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.024",
+            "default": "KNOWLEDGE",
+            "max_chars": 13,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.025",
+            "default": "知识库",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.026",
+            "default": "FEEDBACK",
+            "max_chars": 11,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.027",
+            "default": "反馈管线",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.028",
+            "default": "L4",
+            "max_chars": 3,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.029",
+            "default": "基础层",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.030",
+            "default": "INFRA",
+            "max_chars": 7,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.031",
+            "default": "GPU POOL",
+            "max_chars": 10,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.032",
+            "default": "算力集群",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.033",
+            "default": "GATEWAY",
+            "max_chars": 10,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.034",
+            "default": "网关",
+            "max_chars": 3,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.035",
+            "default": "MONITOR",
+            "max_chars": 10,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "architecture.text.036",
+            "default": "监控告警",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              147.0,
+              239.0,
+              1773.0,
+              774.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          }
+        ],
+        "icon": []
+      },
+      "support": {
+        "text": [
+          {
+            "key": "support.text.001",
+            "default": "PPT 标题",
+            "max_chars": 40,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              0.0,
+              0.0,
+              1920.0,
+              1080.0
+            ],
+            "fit_owner_kind": "slide"
+          },
+          {
+            "key": "support.text.002",
+            "default": "页面标题",
+            "max_chars": 72,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              0.0,
+              0.0,
+              1920.0,
+              1080.0
+            ],
+            "fit_owner_kind": "slide"
+          }
+        ],
+        "icon": []
+      },
+      "takeaway": {
+        "text": [],
+        "icon": []
+      }
+    }
+  },
+  "seed_sha256": "584e411fd4efbfa1b539181437a97e080171f2543a18bddbb5c8c3968f0325fb"
+}

@@ -2,7 +2,7 @@
 
 一套在不同机器和 AI 工具之间复用的协作规则、Skill 与 MCP 声明。首版以 Codex 为接入目标，预留 Claude Code 的原生路径。
 
-## 1. 首版内容
+## 1. 当前共享内容（v0.2.0）
 
 | 编号 | 内容 | 状态 |
 |---|---|---|
@@ -13,8 +13,11 @@
 | 5 | 大师 PPT / Dashi PPT | 已收录，AGPL-3.0 主体及专有导出引擎，详见各许可证 |
 | 6 | graft、fastctx MCP | 已声明，每台机器仍需有对应可执行程序 |
 | 7 | Lieflat Charts | 待商用授权，未分发技能本体 |
+| 8 | Wise PPT | 已收录，AGPL-3.0；HTML 演示与 PDF，要求 Node 22/24 和 Google Chrome 132+ |
 
 目录、来源、版本和限制见 [CATALOG.md](CATALOG.md)，每次发布见 [CHANGELOG.md](CHANGELOG.md)。文件精确版本记录在 [inventory.json](inventory.json)。
+
+Wise PPT 的操作方式与本次验证见 [接入说明](docs/WISE-PPT.md)。它保留自身的设计规范，同时在已接入 TeamAI 的宿主中遵循本仓共同协作规则；本仓不替换或移除 Wise 的安装、结构和交付检查。
 
 ## 2. 在另一台机器接入 Codex
 

@@ -1,0 +1,618 @@
+{
+  "contract": "wise-ppt-layout-seed@4",
+  "layout_id": "wise-ppt.layout.relationship.I3",
+  "display_code": "I3",
+  "page_kind": "relationship",
+  "source": {
+    "path": "references/gallery-paper-ink/ai/frames/layout-i3.html",
+    "sha256": "fe8f4ec1d8deccf07513167968fcdb5c0fc64f73617b917dc14848657f0a1720"
+  },
+  "locked": {
+    "scoped_css": "@scope (.slide[data-layout-id=\"wise-ppt.layout.relationship.I3\"]) {\nsvg.scene { position: absolute; inset: 0; z-index: 1; }\n  .caption {\n    position: absolute; left: 0; right: 0; bottom: 118px;\n    text-align: center;\n    font-family: var(--sans); font-weight: 400;\n    font-size: var(--type-caption); letter-spacing: .04em;\n    color: var(--ink);\n    z-index: 5;\n  }\n}\n",
+    "css_sha256": "dfc957739d2fb4514fc8d7b006d984a7d6ecd85faa9b006092384c63f01471df",
+    "stage_html": "<div class=\"stage\" data-block-id=\"gallery-primary\" data-component-id=\"native.wise-ppt.flow.dual-track.tracks\" data-component-source=\"native\" data-content-ref=\"example.i3\" data-renderer-kind=\"svg\">\n<div class=\"doc tl\"><span class=\"vnext-text-node\" data-vnext-fit-box=\"0,0,1920,1080\" data-vnext-text-key=\"support.text.001\">PPT 标题</span><br/><span class=\"vnext-text-node\" data-vnext-fit-box=\"0,0,1920,1080\" data-vnext-text-key=\"support.text.002\">页面标题</span></div>\n<div class=\"folio\">页码 / 总页数 — BY @歪斯Wise</div>\n<svg class=\"scene\" height=\"1080\" viewbox=\"0 0 1920 1080\" width=\"1920\">\n<g id=\"draw\"><g transform=\"translate(0 -34.7)\"><text data-vnext-fit-box=\"0,0,1920,1080\" data-vnext-text-key=\"tracks.text.001\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" letter-spacing=\"3\" x=\"200\" y=\"306\">OLD LINK — MANUAL OPS</text><line data-vnext-visual-role=\"i3.track-title-rule\" opacity=\"1\" stroke=\"var(--ink)\" stroke-width=\"2\" x1=\"200\" x2=\"440\" y1=\"318\" y2=\"318\"></line><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.002\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" letter-spacing=\"3\" x=\"200\" y=\"636\">NEW LINK — AI WORKFLOW</text><line data-vnext-visual-role=\"i3.track-title-rule\" opacity=\"1\" stroke=\"var(--ink)\" stroke-width=\"2\" x1=\"200\" x2=\"440\" y1=\"648\" y2=\"648\"></line><line opacity=\"0.35\" stroke=\"var(--ink)\" stroke-width=\"0.8\" x1=\"240\" x2=\"1680\" y1=\"380\" y2=\"380\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"280\" x2=\"280\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"320\" x2=\"320\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"360\" x2=\"360\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"400\" x2=\"400\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"440\" x2=\"440\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"480\" x2=\"480\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"520\" x2=\"520\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"560\" x2=\"560\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"600\" x2=\"600\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"640\" x2=\"640\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"680\" x2=\"680\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"720\" x2=\"720\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"760\" x2=\"760\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"800\" x2=\"800\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"840\" x2=\"840\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"880\" x2=\"880\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"920\" x2=\"920\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"960\" x2=\"960\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1000\" x2=\"1000\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1040\" x2=\"1040\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1080\" x2=\"1080\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1120\" x2=\"1120\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1160\" x2=\"1160\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1200\" x2=\"1200\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1240\" x2=\"1240\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1280\" x2=\"1280\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1320\" x2=\"1320\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1360\" x2=\"1360\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1400\" x2=\"1400\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1440\" x2=\"1440\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1480\" x2=\"1480\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1520\" x2=\"1520\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1560\" x2=\"1560\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1600\" x2=\"1600\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.175\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1640\" x2=\"1640\" y1=\"376\" y2=\"384\"></line><line opacity=\"0.5\" stroke=\"var(--ink)\" stroke-width=\"0.8\" x1=\"240\" x2=\"1680\" y1=\"700\" y2=\"700\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"280\" x2=\"280\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"320\" x2=\"320\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"360\" x2=\"360\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"400\" x2=\"400\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"440\" x2=\"440\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"480\" x2=\"480\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"520\" x2=\"520\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"560\" x2=\"560\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"600\" x2=\"600\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"640\" x2=\"640\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"680\" x2=\"680\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"720\" x2=\"720\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"760\" x2=\"760\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"800\" x2=\"800\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"840\" x2=\"840\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"880\" x2=\"880\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"920\" x2=\"920\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"960\" x2=\"960\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1000\" x2=\"1000\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1040\" x2=\"1040\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1080\" x2=\"1080\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1120\" x2=\"1120\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1160\" x2=\"1160\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1200\" x2=\"1200\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1240\" x2=\"1240\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1280\" x2=\"1280\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1320\" x2=\"1320\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1360\" x2=\"1360\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1400\" x2=\"1400\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1440\" x2=\"1440\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1480\" x2=\"1480\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1520\" x2=\"1520\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1560\" x2=\"1560\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1600\" x2=\"1600\" y1=\"696\" y2=\"704\"></line><line opacity=\"0.25\" stroke=\"var(--ink)\" stroke-width=\"0.5\" x1=\"1640\" x2=\"1640\" y1=\"696\" y2=\"704\"></line><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"320\" cy=\"380\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"293,318,347,373\" data-vnext-text-key=\"tracks.text.003\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"320\" y=\"385\">1</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.004\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"320\" y=\"436\">需求接入</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.005\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"320\" y=\"464\">UNIFIED IN</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"320\" cy=\"700\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1.3\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"293,638,347,693\" data-vnext-text-key=\"tracks.text.006\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"320\" y=\"705\">1</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.007\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"320\" y=\"756\">需求接入</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.008\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"320\" y=\"784\">UNIFIED IN</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"640\" cy=\"380\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"613,318,667,373\" data-vnext-text-key=\"tracks.text.009\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"640\" y=\"385\">2</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.010\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"640\" y=\"436\">人工调研</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.011\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"640\" y=\"464\">HUMAN RESEARCH</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"640\" cy=\"700\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1.3\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"613,638,667,693\" data-vnext-text-key=\"tracks.text.012\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"640\" y=\"705\">2</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.013\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"640\" y=\"756\">AI 检索</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.014\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"640\" y=\"784\">AI RETRIEVE</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"960\" cy=\"380\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"933,318,987,373\" data-vnext-text-key=\"tracks.text.015\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"960\" y=\"385\">3</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.016\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"960\" y=\"436\">手写文档</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.017\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"960\" y=\"464\">HAND DRAFT</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"960\" cy=\"700\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1.3\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"933,638,987,693\" data-vnext-text-key=\"tracks.text.018\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"960\" y=\"705\">3</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.019\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"960\" y=\"756\">AI 生成</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.020\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"960\" y=\"784\">AI GENERATE</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"1280\" cy=\"380\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"1253,318,1307,373\" data-vnext-text-key=\"tracks.text.021\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"1280\" y=\"385\">4</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.022\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"1280\" y=\"436\">人工审阅</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.023\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"1280\" y=\"464\">MANUAL REVIEW</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"1280\" cy=\"700\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1.3\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"1253,638,1307,693\" data-vnext-text-key=\"tracks.text.024\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"1280\" y=\"705\">4</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.025\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"1280\" y=\"756\">AI 校验</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.026\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"1280\" y=\"784\">AI VERIFY</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"1600\" cy=\"380\" data-number-part=\"disc\" fill=\"none\" id=\"\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"1573,318,1627,373\" data-vnext-text-key=\"tracks.text.027\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"1600\" y=\"385\">5</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.028\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"\" text-anchor=\"middle\" x=\"1600\" y=\"436\">手动发布</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.029\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"1600\" y=\"464\">MANUAL SHIP</text><g data-number-kind=\"circled\" data-number-rings=\"1\" data-number-role=\"sequence\" data-number-state=\"outline\"><circle cx=\"1600\" cy=\"700\" data-number-part=\"disc\" fill=\"none\" id=\"i3-focus-ring\" opacity=\"1\" r=\"24\" stroke=\"var(--ink)\" stroke-width=\"1.3\"></circle><text data-number-part=\"label\" data-text-kind=\"number\" data-vnext-fit-box=\"1573,638,1627,693\" data-vnext-text-key=\"tracks.text.030\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-label)\" id=\"i3-focus-no\" letter-spacing=\"1\" text-anchor=\"middle\" x=\"1600\" y=\"705\">5</text></g><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.031\" data-vnext-type-slot=\"content-title\" fill=\"var(--ink)\" font-family=\"var(--sans)\" font-size=\"var(--type-subheading)\" font-weight=\"300\" id=\"i3-focus-cn\" text-anchor=\"middle\" x=\"1600\" y=\"756\">一键发布</text><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.032\" fill=\"var(--ink-45)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"i3-focus-en\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"1600\" y=\"784\">ONE-CLICK SHIP</text><line opacity=\"0.2\" stroke=\"var(--ink)\" stroke-dasharray=\"2 6\" stroke-width=\"0.6\" x1=\"320\" x2=\"320\" y1=\"472\" y2=\"616\"></line><circle cx=\"320\" cy=\"544\" fill=\"var(--ink)\" opacity=\"0.4\" r=\"2.2\"></circle><line opacity=\"0.4\" stroke=\"var(--ink)\" stroke-dasharray=\"3 5\" stroke-width=\"0.6\" x1=\"640\" x2=\"640\" y1=\"472\" y2=\"576\"></line><circle cx=\"640\" cy=\"544\" fill=\"var(--paper)\" r=\"20\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\"></circle><circle cx=\"640\" cy=\"544\" fill=\"none\" opacity=\"0.3\" r=\"25\" stroke=\"var(--ink)\" stroke-width=\"0.6\"></circle><path d=\"M 640 534 L 632 551 L 648 551 Z\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.1\"></path><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.033\" fill=\"var(--ink-70)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"640\" y=\"596\">HUMAN RESEARCH → AI RETRIEVE</text><line opacity=\"0.4\" stroke=\"var(--ink)\" stroke-dasharray=\"3 5\" stroke-width=\"0.6\" x1=\"960\" x2=\"960\" y1=\"472\" y2=\"576\"></line><circle cx=\"960\" cy=\"544\" fill=\"var(--paper)\" r=\"20\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\"></circle><circle cx=\"960\" cy=\"544\" fill=\"none\" opacity=\"0.3\" r=\"25\" stroke=\"var(--ink)\" stroke-width=\"0.6\"></circle><path d=\"M 960 534 L 952 551 L 968 551 Z\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.1\"></path><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.034\" fill=\"var(--ink-70)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"960\" y=\"596\">HAND DRAFT → AI GENERATE</text><line opacity=\"0.2\" stroke=\"var(--ink)\" stroke-dasharray=\"2 6\" stroke-width=\"0.6\" x1=\"1280\" x2=\"1280\" y1=\"472\" y2=\"616\"></line><circle cx=\"1280\" cy=\"544\" fill=\"var(--ink)\" opacity=\"0.4\" r=\"2.2\"></circle><line opacity=\"0.4\" stroke=\"var(--ink)\" stroke-dasharray=\"3 5\" stroke-width=\"0.6\" x1=\"1600\" x2=\"1600\" y1=\"472\" y2=\"576\"></line><circle cx=\"1600\" cy=\"544\" fill=\"var(--paper)\" r=\"20\" stroke=\"var(--ink-80)\" stroke-width=\"1.2\"></circle><circle cx=\"1600\" cy=\"544\" fill=\"none\" opacity=\"0.3\" r=\"25\" stroke=\"var(--ink)\" stroke-width=\"0.6\"></circle><path d=\"M 1600 534 L 1592 551 L 1608 551 Z\" fill=\"none\" stroke=\"var(--ink)\" stroke-width=\"1.1\"></path><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.035\" fill=\"var(--ink-70)\" font-family=\"var(--mono)\" font-size=\"var(--type-micro-secondary)\" letter-spacing=\"1.5\" text-anchor=\"middle\" x=\"1600\" y=\"596\">MANUAL REVIEW → AI VERIFY</text><line opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"1.2\" x1=\"1680\" x2=\"1760\" y1=\"700\" y2=\"700\"></line><line opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"1.2\" x1=\"1760\" x2=\"1746\" y1=\"700\" y2=\"693\"></line><line opacity=\"0.7\" stroke=\"var(--ink)\" stroke-width=\"1.2\" x1=\"1760\" x2=\"1746\" y1=\"700\" y2=\"707\"></line><text data-vnext-fit-box=\"190,249,1770,764\" data-vnext-text-key=\"tracks.text.036\" fill=\"var(--ink)\" font-family=\"var(--mono)\" font-size=\"var(--type-meta)\" id=\"sample-focus\" letter-spacing=\"2\" text-anchor=\"end\" x=\"1736\" y=\"734\">E2E -58%</text></g></g>\n</svg>\n<div class=\"caption\" data-vnext-claim-key=\"claim.text.001\" data-vnext-fit-box=\"0,0,1920,1080\">AI 检索、生成、校验与一键发布把端到端流程缩短 58%，但每一站仍需质量门。</div>\n</div>",
+    "stage_structure_sha256": "b894e25ca5d984516944f8f9027db7deadabed6bd02e4e44689e8b4e64b30994"
+  },
+  "bindings": {
+    "claim": {
+      "key": "claim.text.001",
+      "default": "AI 检索、生成、校验与一键发布把端到端流程缩短 58%，但每一站仍需质量门。",
+      "max_chars": 44,
+      "fit_box": [
+        0.0,
+        0.0,
+        1920.0,
+        1080.0
+      ],
+      "fit_owner_kind": "slide"
+    },
+    "primary_slot": "tracks",
+    "slots": {
+      "tracks": {
+        "text": [
+          {
+            "key": "tracks.text.001",
+            "default": "OLD LINK — MANUAL OPS",
+            "max_chars": 23,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              0.0,
+              0.0,
+              1920.0,
+              1080.0
+            ],
+            "fit_owner_kind": "slide"
+          },
+          {
+            "key": "tracks.text.002",
+            "default": "NEW LINK — AI WORKFLOW",
+            "max_chars": 25,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.003",
+            "default": "1",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              293.0,
+              318.0,
+              347.0,
+              373.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.004",
+            "default": "需求接入",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.005",
+            "default": "UNIFIED IN",
+            "max_chars": 13,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.006",
+            "default": "1",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              293.0,
+              638.0,
+              347.0,
+              693.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.007",
+            "default": "需求接入",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.008",
+            "default": "UNIFIED IN",
+            "max_chars": 13,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.009",
+            "default": "2",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              613.0,
+              318.0,
+              667.0,
+              373.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.010",
+            "default": "人工调研",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.011",
+            "default": "HUMAN RESEARCH",
+            "max_chars": 18,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.012",
+            "default": "2",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              613.0,
+              638.0,
+              667.0,
+              693.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.013",
+            "default": "AI 检索",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.014",
+            "default": "AI RETRIEVE",
+            "max_chars": 14,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.015",
+            "default": "3",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              933.0,
+              318.0,
+              987.0,
+              373.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.016",
+            "default": "手写文档",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.017",
+            "default": "HAND DRAFT",
+            "max_chars": 13,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.018",
+            "default": "3",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              933.0,
+              638.0,
+              987.0,
+              693.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.019",
+            "default": "AI 生成",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.020",
+            "default": "AI GENERATE",
+            "max_chars": 14,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.021",
+            "default": "4",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              1253.0,
+              318.0,
+              1307.0,
+              373.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.022",
+            "default": "人工审阅",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.023",
+            "default": "MANUAL REVIEW",
+            "max_chars": 17,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.024",
+            "default": "4",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              1253.0,
+              638.0,
+              1307.0,
+              693.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.025",
+            "default": "AI 校验",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.026",
+            "default": "AI VERIFY",
+            "max_chars": 11,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.027",
+            "default": "5",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              1573.0,
+              318.0,
+              1627.0,
+              373.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.028",
+            "default": "手动发布",
+            "max_chars": 6,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.029",
+            "default": "MANUAL SHIP",
+            "max_chars": 14,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.030",
+            "default": "5",
+            "max_chars": 2,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              1573.0,
+              638.0,
+              1627.0,
+              693.0
+            ],
+            "fit_owner_kind": "svg-shape"
+          },
+          {
+            "key": "tracks.text.031",
+            "default": "一键发布",
+            "max_chars": 5,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.032",
+            "default": "ONE-CLICK SHIP",
+            "max_chars": 18,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.033",
+            "default": "HUMAN RESEARCH → AI RETRIEVE",
+            "max_chars": 33,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.034",
+            "default": "HAND DRAFT → AI GENERATE",
+            "max_chars": 27,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.035",
+            "default": "MANUAL REVIEW → AI VERIFY",
+            "max_chars": 19,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          },
+          {
+            "key": "tracks.text.036",
+            "default": "E2E -58%",
+            "max_chars": 8,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              190.0,
+              249.0,
+              1770.0,
+              764.0
+            ],
+            "fit_owner_kind": "svg-group"
+          }
+        ],
+        "icon": []
+      },
+      "support": {
+        "text": [
+          {
+            "key": "support.text.001",
+            "default": "PPT 标题",
+            "max_chars": 40,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              0.0,
+              0.0,
+              1920.0,
+              1080.0
+            ],
+            "fit_owner_kind": "slide"
+          },
+          {
+            "key": "support.text.002",
+            "default": "页面标题",
+            "max_chars": 72,
+            "item_scope": "item",
+            "item_group_source": "fixed-slot",
+            "item_index": 0,
+            "fit_box": [
+              0.0,
+              0.0,
+              1920.0,
+              1080.0
+            ],
+            "fit_owner_kind": "slide"
+          }
+        ],
+        "icon": []
+      },
+      "takeaway": {
+        "text": [],
+        "icon": []
+      }
+    }
+  },
+  "seed_sha256": "1a2d13e381cdbc49db684472664440df1d9a071d8973101f84981d1704e51738"
+}

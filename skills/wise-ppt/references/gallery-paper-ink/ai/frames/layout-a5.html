@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html data-theme-id="paper-ink" lang="zh-CN" data-runtime="wise-ppt-specimen" data-typography-mode="all-sans" data-page-id="gallery-ai-a5" data-page-role="prove" data-theme="paper-ink" data-layout="paper-ink.evidence.policy-columns" data-layout-source="gallery" data-vnext-semantic-key-map='[]' data-emphasis-targets='[{"target_id":"focus.decisive-difference","members":[{"selector":"#a5-regulation-1","role":"value","treatment":"focus.text","expected_count":1},{"selector":"#a5-regulation-2","role":"value","treatment":"focus.text","expected_count":1}]}]' data-vnext-type-slot-map='[{"slot":"content-title","tag":"text","text":"进度与里程碑","occurrence":0},{"slot":"content-title","tag":"text","text":"服务提供","occurrence":0},{"slot":"content-title","tag":"text","text":"内容与质检","occurrence":0}]'>
+<head>
+<meta charset="UTF-8">
+<title>layout-a5 · 条文陈列页 · AI 使用合规规范</title>
+<script src="../../../../runtime/stage-fit.js"></script>
+<link rel="stylesheet" href="../../../../themes/engine/assets/design-tokens.css">
+<link rel="stylesheet" href="../../../../themes/packages/paper-ink/theme.css">
+<link rel="stylesheet" href="../../../../themes/packages/hermes-orange/theme.css">
+<link rel="stylesheet" href="../../../../themes/packages/klein-blue/theme.css">
+<link rel="stylesheet" href="../../../../themes/engine/assets/catalog-fonts.css" data-wise-catalog-fonts="true">
+<link rel="stylesheet" href="../../../../themes/engine/assets/slide-components.css">
+<link rel="stylesheet" href="../../../shell.css">
+<style>
+  svg.scene { position: absolute; inset: 0; z-index: 1; }
+  .caption {
+    position: absolute; left: 0; right: 0; bottom: 118px;
+    text-align: center;
+    font-family: var(--sans); font-weight: 400;
+    font-size: var(--type-caption); letter-spacing: .04em;
+    color: var(--ink);
+    z-index: 5;
+  }
+</style>
+</head>
+<body class="slide">
+<div class="stage" data-block-id="gallery-primary" data-renderer-kind="svg" data-component-source="native" data-component-id="native.wise-ppt.evidence.policy-columns.clauses" data-content-ref="example.a5">
+  <div class="doc tl">PPT 标题<br>页面标题</div>
+  <div class="folio">页码 / 总页数 — BY @歪斯Wise</div>
+
+  <svg class="scene" width="1920" height="1080" viewBox="0 0 1920 1080">
+    <g id="draw"></g>
+  </svg>
+
+  <div class="caption">进度、服务与内容质量都必须有明确责任链，项目交付不是只过一次验收测试。</div>
+</div>
+
+<script src="../../../../themes/packages/paper-ink/assets/particles.js"></script>
+<script>
+var NS = 'http://www.w3.org/2000/svg';
+var INK = 'var(--ink)';
+var INK70 = 'var(--ink-70)';
+var INK45 = 'var(--ink-45)';
+var G = document.getElementById('draw');
+function el(tag, attrs, parent) {
+  var e = document.createElementNS(NS, tag);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  (parent || G).appendChild(e); return e;
+}
+function txt(x, y, str, attrs, parent) {
+  var t = el('text', Object.assign({x:x, y:y}, attrs||{}), parent);
+  t.textContent = str; return t;
+}
+function txtSegments(x, y, segments, attrs) {
+  var t = el('text', Object.assign({x:x, y:y}, attrs||{}));
+  segments.forEach(function(segment){
+    var span = document.createElementNS(NS, 'tspan');
+    if (segment.id) span.setAttribute('id', segment.id);
+    span.textContent = segment.text;
+    t.appendChild(span);
+  });
+  return t;
+}
+var MONO = 'var(--mono)', SANS = 'var(--sans)';
+
+G = el('g', {transform:'translate(0 -40.2)'});
+
+
+/* ---------- 栏题带（mono EN + 中文栏题 + 短横） ---------- */
+/* v169:三栏等节距 572、整组居中(209 / 781 / 1353,组 bbox 心 960) */
+var cols = [
+  {x:209, en:'CH.1 · SCHEDULE',   cn:'进度与里程碑'},
+  {x:781, en:'CH.2 · SERVICE PROVISION',   cn:'服务提供'},
+  {x:1353,en:'CH.3 · CONTENT & REVIEW', cn:'内容与质检', focus:true}
+];
+cols.forEach(function(c){
+  txt(c.x, 246, c.en, {'font-family':MONO, 'font-size':'var(--type-meta)', 'letter-spacing':3, fill:INK45});
+  txt(c.x, 296, c.cn, {id:c.focus?'sample-focus':'a5-column-'+c.x, 'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-subheading)', fill:INK});
+  el('line', {'data-vnext-visual-role':'a5.column-title-rule', x1:c.x, y1:316, x2:c.x+150, y2:316, stroke:INK, 'stroke-width':2, opacity:1});
+  el('line', {'data-vnext-visual-role':'a5.column-title-subrule', x1:c.x, y1:321, x2:c.x+64, y2:321, stroke:INK, 'stroke-width':1, opacity:1});
+});
+
+/* ---------- 栏间细分隔（0.6px，在两栏内容间隙正中，高度不超栏高） ---------- */
+/* 栏内容右缘≈x+289；分隔线=（上一栏右缘 与 下一栏左缘 的中点） */
+[701, 1237].forEach(function(x){
+  el('line', {x1:x, y1:338, x2:x, y2:820, stroke:INK, 'stroke-width':.8, opacity:.22});
+});
+
+/* ---------- 编号条款（真实圆圈 + 独立数字，17px / 行距 40，条款间距 30） ---------- */
+function clause(x, y, mark, lines) {
+  var marker = el('g', {'data-number-kind':'circled', 'data-number-role':'structural', 'data-number-state':'outline', 'data-number-rings':'1'});
+  el('circle', {cx:x+9, cy:y-6, r:11, fill:'none', stroke:INK, 'stroke-width':1, 'data-number-part':'disc'}, marker);
+  txt(x+9, y-1, mark, {'data-number-part':'label', 'data-text-kind':'number', 'font-family':MONO, 'font-size':'var(--type-meta)', 'text-anchor':'middle', fill:INK}, marker);
+  lines.forEach(function(ln, i){
+    var attrs = {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-body-small)', fill:INK};
+    if (ln === '服务启动前应完成《xx 服务响应') {
+      txtSegments(x+34, y + i*40, [
+        {text:'服务启动前应完成'},
+        {id:'a5-regulation-1', text:'《xx 服务响应'}
+      ], attrs);
+    } else if (ln === '与升级管理办法》制度的宣贯培训。') {
+      txtSegments(x+34, y + i*40, [
+        {id:'a5-regulation-2', text:'与升级管理办法》'},
+        {text:'制度的宣贯培训。'}
+      ], attrs);
+    } else {
+      txt(x+34, y + i*40, ln, attrs);
+    }
+  });
+  return y + lines.length * 40 + 30;
+}
+function sub(x, y, mark, line) {
+  txt(x+34, y, mark, {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-body-small)', fill:INK70});
+  txt(x+70, y, line, {'font-family':SANS, 'font-weight':300, 'font-size':'var(--type-body-small)', fill:INK70});
+  return y + 34;
+}
+
+/* 栏一 · 进度与里程碑 */
+var y = 372;
+y = clause(209, y, '1', ['项目启动阶段应输出经过评审确认的', '里程碑计划与责任分工，明确到具体执行人。']);
+y = clause(209, y, '2', ['阶段成果进入评审队列后，评审意见', '须在两个工作日内闭环并留存记录。']);
+y = clause(209, y, '3', ['进度偏差超过计划百分之十的，应当', '书面说明原因并提出追赶方案。']);
+y = clause(209, y, '4', ['交付团队应当持续改进交付质量，', '提升成果的完整性、一致性与可复用性。']);
+y = clause(209, y, '5', ['交付范围发生重大变更的，应重新进行', '范围确认与计划评审程序。']);
+
+/* 栏二 · 服务提供 */
+y = 372;
+y = clause(781, y, '1', ['服务启动前应完成《xx 服务响应', '与升级管理办法》制度的宣贯培训。']);
+y = clause(781, y, '2', ['应与注册使用者签订服务协议，明确', '双方权利义务与禁止内容。']);
+y = clause(781, y, '3', ['紧急问题应按最高优先级响应，', '并在处置后向全体相关方同步。']);
+y = clause(781, y, '4', ['每季度输出服务运行报告，内容', '覆盖使用情况与改进计划。']);
+y = clause(781, y, '5', ['应建立公众投诉举报受理机制，及时', '处置并反馈处理情况。']);
+
+/* 栏三 · 内容与质检 */
+y = 372;
+y = clause(1353, y, '1', ['内容产出应遵循统一风格规范，', '不得偏离确认过的选题与口径。']);
+y = clause(1353, y, '2', ['引用外部数据时应核对来源，', '并标注采集时间与口径。']);
+y = clause(1353, y, '3', ['使用图片、视频等素材的，应', '确认授权状态并保留凭证备查。']);
+y = clause(1353, y, '4', ['质检抽检应覆盖全部交付页面，', '发现问题当日退回并限期修正。']);
+y = clause(1353, y, '5', ['未通过质检的产出不计入交付，', '须整改后重新提交复检。']);
+
+stageFit();
+</script>
+</body>
+</html>
